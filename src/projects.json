@@ -1,0 +1,65 @@
+[
+  {
+    "id": "project1",
+    "title": "Learning Dynamic Tasks on a Large-Scale Soft Robot in a Handful of Trials",
+    "description": "In this work, we present a data-efficient learning-based controller for a large-scale soft robot using Bayesian optimization. We evaluated our method on hammering and throwing tasks in simulation (Mujoco) as well as on a physical soft robot.",
+    "imageURL": "images/1_bayesoptsoft/arm_hardware.jpg",
+    "hoverImageURL": "images/1_bayesoptsoft/throw_open.png",
+    "authors": ["Sicelukwanda Zwane", "Daniel Cheney", "Curtis C. Johnson", "Yicheng Luo", "Yasemin Bekiroglu", "Marc D. Killpack", "Marc Peter Deisenroth"],
+    "venue": "IROS 2024",
+    "paperURL":"https://arxiv.org/abs/2411.07342",
+    "projectURL":"https://sites.google.com/view/bayesoptsoftrobotcontrol",
+    "codeURL": "https://github.com/Sicelukwanda/BayesOptSoftRobotControl"
+  },
+  {
+    "id": "project2",
+    "title": "A Unifying Variational Framework for Gaussian Process Motion Planning",
+    "description": "In this paper, we introduce a framework for motion planning based on variational Gaussian Processes, which unifies various probabilistic-inference-based motion planning algorithms. We evaluate our method on a challenging obstacle avoidance task in the Pybullet simulator and on a physical manipulator robot.",
+    "imageURL": "images/2_vgpmp/vgpmp_boxes_end_lines.png",
+    "hoverImageURL": "images/2_vgpmp/vgpmp_plot_grasp_short_3.jpg",
+    "authors": ["Lucas Cosier", "Rares Iordan", "Sicelukwanda Zwane", "Giovanni Franzese", "James T. Wilson", "Marc Peter Deisenroth", "Alexander Terenin", "Yasemin Bekiroglu"],
+    "venue": "AISTATS 2024",
+    "paperURL":"https://arxiv.org/abs/2309.00854",
+    "projectURL":"https://papers.avt.im/vgpmp-motion-planning/",
+    "codeURL": "https://github.com/luke-ck/vgpmp"
+  },
+  {
+    "id": "project3",
+    "title": "Safe Trajectory Sampling in Model-based Reinforcement Learning",
+    "description": "We present a data-efficient method for enforcing safety constraints in model-based reinforcement learning, ensuring safe trajectories for real robots. Our method integrates user-specified requirements and employing Gaussian processes to maintain complex predictive state distributions.",
+    "imageURL": "images/3_safembrl/lim-z.png",
+    "authors": ["Sicelukwanda Zwane", "Denis Hadjivelichkov", "Yicheng Luo", "Yasemin Bekiroglu", "Dimitrios Kanoulas", "Marc P. Deisenroth"],
+    "venue": "CASE 2023",
+    "paperURL":"https://dkanou.github.io/publ/P44__Zwane_CASE_2023.pdf",
+    "projectURL":"https://www.sml-group.cc/blog/2023-safe-sampling/"
+  },
+  {
+    "id": "project4",
+    "title": "One-Shot Transfer of Affordance Regions? AffCorrs!",
+    "description": "Our model, AffCorrs, uses a single reference image with annotated affordance regions to segment semantically corresponding parts within a target scene. It leverages pre-trained DINO-ViT's image descriptors and cyclic correspondences, enabling both intra- and inter-class one-shot part segmentation.",
+    "imageURL": "images/4_affcorrs/affcorrs-2.gif",
+    "authors": ["Denis Hadjivelichkov", "Sicelukwanda Zwane", "Lourdes Agapito", "Marc P. Deisenroth", "Dimitrios Kanoulas"],
+    "venue": "CoRL 2022",
+    "paperURL":"https://arxiv.org/abs/2209.07147",
+    "projectURL":"https://sites.google.com/view/affcorrs",
+    "codeURL": "https://github.com/RPL-CS-UCL/UCL-AffCorrs"
+  },
+  {
+    "id": "project6",
+    "title": "Using Mixture Density Networks to Model Continuous Action Priors",
+    "authors": ["Sicelukwanda Zwane", "Supervised by Benjamin Rosman and Pravesh Ranchod"],
+    "venue":"MSc Dissertation 2019 - University of the Witwatersrand",
+    "description": "As part of my MSc Dissertation, I investigated knowledge reuse in the context of continuous control reinforcement learning. I developed a method for learning a multi-modal distribution over expert action preferences in a given environment. A new agent in this environment could use this ditribution to explore and learn more efficiently.",
+    "imageURL": "images/6_msc/Champ.png"
+  },
+  {
+    "id": "project5",
+    "title": " Safer Exploration in Deep Reinforcement Learning with Action Priors ",
+    "description": "In this work, we model action priors (the distribution over expert actions) using a Gaussian process and used it as an exploration policy for a deep reinforcement learning agent, promoting safe, sample-efficient learning.",
+    "imageURL": "images/5_safeexp/uncertainty.png",
+    "hoverImageURL": "images/5_safeexp/pothols.png",
+    "authors": ["Sicelukwanda Zwane", "Tlou Boloka", "Ndivhuwo Makondo", "Benjamin Rosman"],
+    "venue":"Black in AI workshop (NeurIPS 2018)",
+    "paperURL": "https://github.com/blackinai/bai-sample-papers/blob/main/papers/Zwane_BAI2018.pdf"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Doctoral Student",
+    "company": "University College London",
+    "location": "London, United Kingdom",
+    "company_link": "https://www.ucl.ac.uk",
+    "duration": "2020 - Present",
+    "description": "I am pursuing a PhD in AI and robotics under the supervision of Professor Marc deisenroth and Professor Dimitrios Kanoulas."
+  },
+  {
+    "id": 2,
+    "title": "PhD Research Intern - Mobile Robotics",
+    "company": "National Institute of Advanced Industrial Science and Technology (AIST)",
+    "company_link": "https://www.aist.go.jp/index_en.html",
+    "location": "Tokyo, Japan",
+    "duration": "2024 - 2024 (3 - months)",
+    "description": "During this internship, I worked on safe motion planning with mobile robots in crowded spaces (shopping malls, science museums, etc) using generative models."
+  },
+  {
+    "id": 3,
+    "title": "Postgraduate Teaching Assistant",
+    "company": "University College London",
+    "company_link": "https://www.ucl.ac.uk",
+    "location": "London, United Kingdom",
+    "duration": "2020 - 2023",
+    "description": "I helped develop and assess student coursework in C++ (covering robot sensing, interaction, and manipulation)."
+  },
+  {
+    "id": 4,
+    "title": "Data Scientist",
+    "company": "Explore AI",
+    "company_link": "https://www.explore.ai",
+    "location": "Johannesburg, South Africa",
+    "duration": "2019 - 2020",
+    "description": "I was part of a team developing data-science training courses for corporate South Africa mean new graduates."
+  },
+  {
+    "id": 5,
+    "title": "MSc Research Intern - Field Robotics",
+    "company": "Council for Scientific and Industrial Research (CSIR)",
+    "company_link": "https://www.csir.co.za",
+    "location": "Pretoria, South Africa",
+    "duration": "2017 - 2019",
+    "description": "This internship ran alongside my masters degree. My additional responsibilities included developing and maintaining software for control and perception of a mobile manipulator robot."
+  }
+]
