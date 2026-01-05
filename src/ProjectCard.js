@@ -9,10 +9,12 @@ function ProjectCard({ project }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="ProjectContent">
-        <img 
-          src={isHovered && project.hoverImageURL ? project.hoverImageURL : project.imageURL} 
-          alt={project.title} 
-        />
+        {project.imageURL && (
+          <img
+            src={isHovered && project.hoverImageURL ? project.hoverImageURL : project.imageURL}
+            alt={project.title}
+          />
+        )}
         {project.venue && <p className="Venue">{project.venue}</p>}
         <h2>{project.title}</h2>
         {project.authors && <p className="Authors">{project.authors.join(", ")}</p>}
