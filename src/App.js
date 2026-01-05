@@ -24,9 +24,9 @@ function App() {
         <h1>About me</h1>
         <img src={`${process.env.PUBLIC_URL}/images/SMHall.jpg`} alt="Profile" className="profile-photo"/>
         <p>
-          I am a DPhil Candidate student at
+          I am a DPhil Candidate at
           the <a href="https://www.ox.ac.uk/">University of Oxford</a>, <a href="https://www.nds.ox.ac.uk/research/oxford-neural-interfacing">Oxford Neural Interfacing Group</a>,
-          where I worked on computational neuroscience and AI fairness.
+          where I work on computational neuroscience and AI fairness.
         </p>
         <p>
         <a href="https://github.com/smhall97" target="_blank" rel="noopener noreferrer">
