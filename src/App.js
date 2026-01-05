@@ -43,7 +43,7 @@ function App() {
           LinkedIn
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="mailto:hall.sm2020@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="#contact">
           Email
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;
