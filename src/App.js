@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import ProjectCard from './ProjectCard';
 import projectsData from './projects.json';
@@ -6,13 +6,8 @@ import ExperienceTimeline from './ExperienceTimeline';
 import experiencesData from './timeline.json';
 
 function App() {
-  const [projects, setProjects] = useState([]);
+  const projects = projectsData;
 
-  useEffect(() => {
-    // This assumes your projects.json is stored in the public folder
-    // If it's in src, you can directly import it as done above
-    setProjects(projectsData);
-  }, []);     
   return (
     <div className="App"
       style={{
@@ -29,7 +24,6 @@ function App() {
         <h1>About me</h1>
         <img src={`${process.env.PUBLIC_URL}/images/SMHall.jpg`} alt="Profile" className="profile-photo"/>
         <p>
-          {/* My recent reach interests include planning under uncertainty, robotics for the circular economy, soft robotics, and planning with diffusion. */}
           I am a DPhil Candidate student at
           the <a href="https://www.ox.ac.uk/">University of Oxford</a>, <a href="https://www.nds.ox.ac.uk/research/oxford-neural-interfacing">Oxford Neural Interfacing Group</a>,
           where I worked on computational neuroscience and AI fairness.
