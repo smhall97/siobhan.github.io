@@ -29,9 +29,23 @@ npm run deploy
 
 ## Development
 
+This project uses a two-branch workflow:
+- `dev` - Development branch (default for all work)
+- `main` - Production branch (auto-deploys to live site)
+
+```bash
+# Switch to dev branch
+git checkout dev
+
+# Start development server
+npm run dev
+```
+
 Visit `http://localhost:5173` after running `npm run dev`.
 
-The site automatically deploys to GitHub Pages when you push to the `main` branch.
+**Important:** The site only deploys when you merge to `main` and push. Working on `dev` is safe and won't affect the live site.
+
+See [CLAUDE.md](CLAUDE.md) for detailed branching workflow and deployment guidelines.
 
 ## Project Structure
 
