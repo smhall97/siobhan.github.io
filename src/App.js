@@ -25,6 +25,7 @@ function App() {
           <a href="#about">About</a>
           <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </nav>
         <h1 id="about">About me</h1>
         <img src={`${process.env.PUBLIC_URL}/images/SMHall.jpg`} alt="Profile" className="profile-photo"/>
@@ -68,9 +69,15 @@ function App() {
         here</a>
       </h4>
       <ExperienceTimeline experiences={experiencesData}/>
+      <h1 id="contact">Contact</h1>
+      <div style={{ padding: '20px', maxWidth: '700px', margin: '0 auto' }}>
+        <p>
+          Feel free to reach out to me at: <strong>siobhan.hall [at] nds.ox.ac.uk</strong>
+        </p>
+      </div>
       <div className="attribution">
         <h6>Copyright © 2026 Siobhan Mackenzie Hall. All Rights Reserved. &nbsp;</h6>
-      </div> 
+      </div>
     </div>
   );
 }
