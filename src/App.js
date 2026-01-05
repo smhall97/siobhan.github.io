@@ -70,7 +70,7 @@ function App() {
       </h4>
       <ExperienceTimeline experiences={experiencesData}/>
       <div className="attribution">
-        <h6>Copyright © 2024 Sicelukwanda Zwane. All Rights Reserved. &nbsp;</h6>
+        <h6>Copyright © 2026 Siobhan Mackenzie Hall. All Rights Reserved. &nbsp;</h6>
       </div> 
     </div>
   );
