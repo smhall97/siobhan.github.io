@@ -21,7 +21,12 @@ function App() {
     >
       <header className="App-header">
         <h2 className="fixed-name">Siobhan Mackenzie Hall</h2>
-        <h1>About me</h1>
+        <nav className="nav-menu">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+        </nav>
+        <h1 id="about">About me</h1>
         <img src={`${process.env.PUBLIC_URL}/images/SMHall.jpg`} alt="Profile" className="profile-photo"/>
         <p>
           I am a DPhil Candidate at
@@ -48,16 +53,16 @@ function App() {
         <a href="CV.pdf" target="_blank" rel="noopener noreferrer">
         CV
         </a>
-        
+
         </p>
       </header>
-      <h1>Projects & Publications</h1>
+      <h1 id="publications">Projects & Publications</h1>
       <div className="Projects-container">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-      <h1>Roles & Experience</h1>
+      <h1 id="experience">Roles & Experience</h1>
       <h4>More detailed CV available
       &nbsp;<a href="CV.pdf" target="_blank" rel="noopener noreferrer">
         here</a>

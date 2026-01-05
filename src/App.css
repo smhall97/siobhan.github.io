@@ -330,6 +330,45 @@ h1, h2, h3, h4, h5, h6 {
   margin:0;
 }
 
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  display: flex;
+  gap: 2rem;
+  padding: 15px 30px;
+  background-color: transparent;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+  color: var(--pink-orchid);
+  border-bottom: 2px solid var(--pink-orchid);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 1rem;
+    padding: 15px 15px;
+  }
+
+  .nav-menu a {
+    font-size: 0.9rem;
+  }
+}
+
 .attribution {
   font-size: 0.9em;
   color: #d4d3d3;
