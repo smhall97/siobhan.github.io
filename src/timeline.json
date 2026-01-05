@@ -31,7 +31,7 @@
     "title": "Software Engineer (Part-time)",
     "company": "Mamba Insights",
     "company_link": "https://mamba-insights.com",
-    "location": "Johannesburg, South Africa",
+    "location": "Cape Town, South Africa",
     "duration": "September 2020 - July 2021",
     "description": "Engineered computer vision pipeline using YOLO (PyTorch) and OpenCV to extract business intelligence from CCTV footage for agricultural compliance monitoring. Developed custom temporal algorithms for activity tracking. Deployed models to production on edge devices in June 2021, processing noisy real-world data in resource-constrained environments."
   },
