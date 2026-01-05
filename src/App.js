@@ -20,7 +20,7 @@ function App() {
       }}
     >
       <header className="App-header">
-        <h2 className="fixed-name">Siobhan Mackenzie Hall</h2>
+        <h2 className="fixed-name"><a href="#about">Siobhan Mackenzie Hall</a></h2>
         <nav className="nav-menu">
           <a href="#about">About</a>
           <a href="#publications">Publications</a>
