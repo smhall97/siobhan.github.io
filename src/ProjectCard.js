@@ -21,10 +21,10 @@ function ProjectCard({ project }) {
         <p>{project.description}</p>
       </div>
       <div className="links-row">
-      {project.projectURL && <a href={project.projectURL}>Project</a>}
-      {project.videoURL && <a href={project.videoURL}>Video</a>}
-      {project.paperURL && <a href={project.paperURL}>Paper</a>}
-      {project.codeURL && <a href={project.codeURL}>Code</a>}
+      {project.projectURL && <a href={project.projectURL} target="_blank" rel="noopener noreferrer">Project</a>}
+      {project.videoURL && <a href={project.videoURL} target="_blank" rel="noopener noreferrer">Video</a>}
+      {project.paperURL && <a href={project.paperURL} target="_blank" rel="noopener noreferrer">Paper</a>}
+      {project.codeURL && <a href={project.codeURL} target="_blank" rel="noopener noreferrer">Code</a>}
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ function App() {
         <img src={`${process.env.PUBLIC_URL}/images/SMHall.jpg`} alt="Profile" className="profile-photo"/>
         <p>
           I am a DPhil Candidate at
-          the <a href="https://www.ox.ac.uk/">University of Oxford</a>, <a href="https://www.nds.ox.ac.uk/research/oxford-neural-interfacing">Oxford Neural Interfacing Group</a>,
+          the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford</a>, <a href="https://www.nds.ox.ac.uk/research/oxford-neural-interfacing" target="_blank" rel="noopener noreferrer">Oxford Neural Interfacing Group</a>,
           where I work on computational neuroscience and AI fairness.
         </p>
         <p>
