@@ -1,14 +1,9 @@
 {
-  "short_name": "Sicelukwanda Zwane",
-  "name": "Sicelukwanda Zwane Portfolio",
+  "short_name": "Siobhan Mackenzie Hall",
+  "name": "Siobhan Mackenzie Hall Portfolio",
   "icons": [
     {
-      "src": "Logo.svg",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "images/profile-photo.jpg",
+      "src": "images/SMHall.jpg",
       "type": "image/jpg",
       "sizes": "1912x1811 196x196"
     }
