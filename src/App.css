@@ -1,81 +1,339 @@
-.app {
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+:root{
+  --card-bg: linear-gradient(135deg,  #ffffffd3, #b3f2dd90, #ffffffd3);
+  --card-bg-hover: linear-gradient(135deg, #b3f2dd90, #ffffffd3, #b3f2dd90);
+  --timeline-card-bg: #44b3f848;
+  --timeline-card-bg-hover: #44b3f88c;
+  --card-border: 1px solid #aaa;
+  --header-bg: linear-gradient(-45deg,  #ffffffa5, #ffffff2a);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+}
+
+.App {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.App-header {
+  background: var(--header-bg);
+  background-size: 400% 400%;
+  animation: gradientShift 7s ease infinite;
+  padding: 30px;
+  margin-top: 20px;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
-}
-
-.header {
-  padding: 3rem 2rem;
-  text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.tagline {
-  margin: 0.5rem 0 0;
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
-.main-content {
-  flex: 1;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 3rem 2rem;
-}
-
-.intro {
-  margin-bottom: 3rem;
-}
-
-.intro h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.projects h2 {
-  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
   margin-bottom: 2rem;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+.App a{
+  color: #007bff; /* Bright blue, adjust as needed */
 }
 
-.project-card {
-  padding: 2rem;
+.App-header p {
+  font-size: 20px;
+  max-width : 700px;
+}
+
+.App-header h2 {
+  color: #ffffff;
+  background:  #000000;
+}
+
+.App-header a {
+  color: #000dc7; /* Bright blue, adjust as needed */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.App-header a:hover, a:focus {
+  color: #0056b3; /* Darker shade for contrast */
+  text-decoration: underline;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.Projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.ProjectCard {
+  background: var(--card-bg);
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 290px;
+  flex-direction: column;
+  align-items: center;
+  border: var(--card-border);
   border-radius: 8px;
-  background: #f7fafc;
-  border: 1px solid #e2e8f0;
-  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.ProjectCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: var(--card-bg-hover);
 }
 
-.project-card h3 {
-  margin-top: 0;
-  color: #667eea;
+.ProjectCard img {
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  width: 100%;
+  height: 40%; /* Will be the same as the .ProjectCard container */
+  object-fit: cover; /* Cover the container area */
+  object-position: center top; /* Crop from the bottom */
+  border-bottom: 1px solid #ddd;
 }
 
-.footer {
-  padding: 2rem;
+.ProjectCard h2 {
+  font-size: 0.95em;
+  margin: 0.5em;
+  padding: 0 15px;
+}
+
+.ProjectCard .Authors, .Venue {
+  color:#908b8b;
+}
+
+.ProjectContent .Venue {
   text-align: center;
-  background: #2d3748;
-  color: white;
 }
 
-.footer p {
-  margin: 0;
+.ProjectCard p {
+  padding: 0 1em;
+  font-size: 0.7em;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.ProjectCard a {
+  display: inline-block;
+  margin: 0em 0.5em;
+  padding: 0.5em 0.5em;
+  /* background-color: #007bff; */
+  color: #007bff;
+  /* text-decoration: none; */
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  align-self: center;
+  font-size: 0.7em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ProjectCard a:hover, a:focus {
+  /* background-color: #0056b3; */
+  color: #0056b3;
+  text-decoration: underline;
+}
+.ProjectCard a:visited {
+  /* background-color: #0056b3; */
+}
+
+
+.ProjectContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em; /* Adds spacing between text fields */
+  flex-grow: 1; /* Ensures content grows to fill available space */
+}
+
+/* Ensure the links stay in a row */
+.ProjectCard div.links-row {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  justify-content: center; /* Center the links horizontally */
+  align-items: center; /* Center the links vertically */
+  /* margin-top: 0.5em; */
+  margin-top: auto;
+  padding-bottom: 0.8em
+}
+
+.ProjectCard img {
+  transition: opacity 0.3s ease;
+}
+
+.ProjectCard:hover img {
+  opacity: 0.9;
+}
+
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .App-header h1, .App-header p, .ProjectCard h2, .ProjectCard p {
+    padding: 0 10px;
+  }
+
+  /* .ProjectCard h2 {
+    font-size: 1.2em;
+  } */
+
+}
+
+/* Additional responsiveness for very small devices */
+@media (max-width: 480px) {
+  .Projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .ProjectCard {
+    margin: 0.5em auto;
+    max-width: 95%;
+  }
+}
+
+
+.timeline-hypercontainer {
+  display: grid;
+  place-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.timeline-container {
+  display: inline-block;
+  position:relative;
+  /* Space for the line and dot */
+  padding-left: 30px; 
+  /* width:100%; */
+  text-align: left;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px; /* Space between items */
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  max-width:700px;
+  background: var(--timeline-card-bg); /* Light background for the items */
+  border: var(--card-border); /* Subtle border */
+  border-radius: 8px; /* Soft rounded corners */
+  transition: background 0.2s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+
+  .timeline-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: var(--timeline-card-bg-hover);
+  }
+
+/* Width of the line */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px; 
+  background-color: #cbc6c6; 
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -46px; /* Half the width of the dot to center it on the line */
+  top: 50%;
+  height: 12px; /* Dot size */
+  width: 12px; /* Dot size */
+  background-color: #333; /* Dot color */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.profile-photo {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 40%; /* Creates the circular frame */
+  border: 2px solid #aea6a6; /* Optional: Adds a border around the image */
+  object-fit: cover; /* Ensures the image covers the frame without distortion */
+}
+
+.fixed-name {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000; /* Or any color fitting your theme */
+  text-align: left;
+  z-index: 1000; /* Ensures it stays above other content */
+  padding: 10px 0;
+  padding-left : 30px;
+  margin:0; 
+}
+
+.attribution {
+  font-size: 0.9em;
+  color: #d4d3d3;
+  margin-top: 1em;
+}
+.attribution a{
+  color: #d4d3d3;
 }
