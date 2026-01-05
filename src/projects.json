@@ -3,7 +3,7 @@
     "id": "project1",
     "title": "The World Wide Recipe: A Community-Centred Framework for Fine-Grained Data Collection and Regional Bias Operationalisation",
     "description": "Addressing the 'Western gaze' in AI training data by building a dataset from the ground up using community networks in Africa and beyond. Collected 765 unique dishes across 106 countries, with names in 131 local languages. Over 50% of community-sourced dishes did not exist in comparable web-scraped datasets, proving the limits of automated scraping.",
-    "authors": ["Siobhan Mackenzie Hall", "Baleine Naumi", "Elizabeth Bondi-Kelly", "Towela Nyirenda-Jere", "Sarah Luger", "Mercy Nyamewaa Asiedu"],
+    "authors": ["Jabez Magomere", "Shu Ishida", "Tejumade Afonja", "Aya Salama", "Daniel Kochin", "Foutse Yuehgoh", "Imane Hamzaoui", "Raesetje Sefala", "Aisha Alaagib", "Samantha Dalal", "Beatrice Marchegiani", "Elizaveta Semenova", "Lauren Crais", "Siobhan Mackenzie Hall"],
     "venue": "ACM FAccT 2025 (Best Paper Honourable Mention)",
     "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   },
@@ -11,7 +11,7 @@
     "id": "project2",
     "title": "VisoGender: A Dataset for Benchmarking Gender Bias in Image-Text Pronoun Resolution",
     "description": "Built a dataset of 690 images covering 23 occupations to benchmark gender bias in vision-language models. Evaluated 6 vision-language encoders (including CLIP, OpenCLIP, SLIP) and 2 captioning models (BLIP-2, GIT). Found that in different-gender scenes, vision-language encoders performed worse than random chance, proving they rely on bag-of-words correlations rather than true compositional understanding.",
-    "authors": ["Siobhan Mackenzie Hall", "Candice Schumann", "Lucia Volanová", "Enes Altinisik", "Alina Landowska", "Ioana Baldini"],
+    "authors": ["Siobhan Mackenzie Hall", "Fernanda Gonçalves Abrantes", "Hanwen Zhu", "Grace Sodunke", "Aleksandar Shtedritski", "Hannah Rose Kirk"],
     "venue": "NeurIPS 2023",
     "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   },
@@ -19,7 +19,7 @@
     "id": "project3",
     "title": "A Prompt Array Keeps the Bias Away: Debiasing Vision-Language Models with Adversarial Learning",
     "description": "Proposed an adversarial learning framework to debias vision-language models without large-scale retraining. Used frozen CLIP encoders with learnable prompt tokens and multi-layer perceptron adversaries. Jointly optimised adversarial loss and image-text contrastive loss, achieving less than 1% drop in zero-shot ImageNet accuracy whilst reducing bias. Discovered that standard NLP bias metrics (WEAT) were mathematically brittle in multimodal contexts.",
-    "authors": ["Sasha Luccioni", "Yacine Jernite", "Christopher Akiki", "Siobhan Mackenzie Hall", "Margaret Mitchell", "Alexandra Sasha Luccioni"],
+    "authors": ["Hugo Berg", "Siobhan Mackenzie Hall", "Yash Bhalgat", "Wonsuk Yang", "Hannah Rose Kirk", "Aleksandar Shtedritski", "Max Bain"],
     "venue": "AACL 2022",
     "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   },
@@ -27,7 +27,7 @@
     "id": "project4",
     "title": "SMRS: Advocating a Unified Reporting Standard for Surrogate Models",
     "description": "Position paper advocating for standardised reporting practices in surrogate modelling to ensure reproducibility and transparency. Addresses the challenge of using artificial neural networks as surrogates for computationally expensive physics simulations, particularly in the context of computational neuroscience and electrode design.",
-    "authors": ["Siobhan Mackenzie Hall", "Brian Andrews", "James FitzGerald"],
+    "authors": ["Elizaveta Semenova", "Alisa Sheinkman", "Timothy James Hitge", "Siobhan Mackenzie Hall", "Jon Cockayne"],
     "venue": "NeurIPS 2025 Position Paper",
     "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   },
@@ -35,7 +35,7 @@
     "id": "project5",
     "title": "Finite Element Modelling for Biophysical Models of Cortical Stimulation: A Computational Framework",
     "description": "Developed a comprehensive modelling pipeline coupling finite element modelling (COMSOL) with biophysical neuron modelling (NEURON/Python) to optimise electrode geometry for brain mapping. Implemented adaptive meshing to resolve high-gradient areas near electrodes whilst saving computational resources. Built surrogate models using artificial neural networks in PyTorch to predict neural activation, significantly reducing computational demands compared to full biophysical simulations.",
-    "authors": ["Siobhan Mackenzie Hall", "Brian Andrews", "James FitzGerald"],
+    "authors": ["Rodrigo Osorio L.", "Siobhan Mackenzie Hall", "Francisco Saavedra R.", "Pablo Aqueveque N.", "James J. FitzGerald", "Brian Andrews"],
     "venue": "IEEE TNSRE 2025",
     "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   },
@@ -43,7 +43,7 @@
     "id": "project6",
     "title": "The Human Labour of Data Work: Understanding the Challenges of Data Collection in the Global South",
     "description": "Investigates the human labour involved in data collection processes, particularly focusing on challenges faced by communities in the Global South. Examines the intersection of responsible AI, data diversity, and the often-invisible work of data contributors. Highlights the need for ethical data collection practices that centre community voices and ensure fair compensation for data labour.",
-    "authors": ["Siobhan Mackenzie Hall", "Baleine Naumi", "Elizabeth Bondi-Kelly"],
+    "authors": ["Siobhan Mackenzie Hall", "Samantha Dalal", "Raesetje Sefala", "Foutse Yuehgoh", "Aisha Alaagib", "Imane Hamzaoui", "Shu Ishida", "Jabez Magomere", "Lauren Crais", "Aya Salama", "Tejumade Afonja"],
     "venue": "CSCW 2025",
     "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   }
