@@ -55,5 +55,5 @@ When updating experience, projects, or publications, always:
 ## Notes
 
 - Build artifacts are committed to the repo for GitHub Pages deployment
-- The site is live at siobhanhall.com (CNAME configured)
+- The site is live at siobhanmackenziehall.com (CNAME configured)
 - Changes to main are deployed automatically
