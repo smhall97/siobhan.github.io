@@ -1,12 +1,12 @@
 # abort on errors
 set -e
 
-env PUBLIC_URL=https://sicelukwanda.com/ npm run build
+env PUBLIC_URL=https://siobhanmackenziehall.com/ npm run build
 
 cd build
 
 # Create or update the CNAME file with your custom domain
-echo "sicelukwanda.com" > CNAME
+echo "siobhanmackenziehall.com" > CNAME
 
 git init
 git checkout -b main
