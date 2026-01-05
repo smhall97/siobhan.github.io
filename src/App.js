@@ -35,6 +35,9 @@ function App() {
           where I work on computational neuroscience and AI fairness.
         </p>
         <p>
+          <strong>Plot twist: I submitted my thesis in October 2025!</strong>
+        </p>
+        <p>
         <a href="https://github.com/smhall97" target="_blank" rel="noopener noreferrer">
           Github
         </a>
