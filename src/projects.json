@@ -1,65 +1,50 @@
 [
   {
     "id": "project1",
-    "title": "Learning Dynamic Tasks on a Large-Scale Soft Robot in a Handful of Trials",
-    "description": "In this work, we present a data-efficient learning-based controller for a large-scale soft robot using Bayesian optimization. We evaluated our method on hammering and throwing tasks in simulation (Mujoco) as well as on a physical soft robot.",
-    "imageURL": "images/1_bayesoptsoft/arm_hardware.jpg",
-    "hoverImageURL": "images/1_bayesoptsoft/throw_open.png",
-    "authors": ["Sicelukwanda Zwane", "Daniel Cheney", "Curtis C. Johnson", "Yicheng Luo", "Yasemin Bekiroglu", "Marc D. Killpack", "Marc Peter Deisenroth"],
-    "venue": "IROS 2024",
-    "paperURL":"https://arxiv.org/abs/2411.07342",
-    "projectURL":"https://sites.google.com/view/bayesoptsoftrobotcontrol",
-    "codeURL": "https://github.com/Sicelukwanda/BayesOptSoftRobotControl"
+    "title": "The World Wide Recipe: A Community-Centred Framework for Fine-Grained Data Collection and Regional Bias Operationalisation",
+    "description": "Addressing the 'Western gaze' in AI training data by building a dataset from the ground up using community networks in Africa and beyond. Collected 765 unique dishes across 106 countries, with names in 131 local languages. Over 50% of community-sourced dishes did not exist in comparable web-scraped datasets, proving the limits of automated scraping.",
+    "authors": ["Siobhan Mackenzie Hall", "Baleine Naumi", "Elizabeth Bondi-Kelly", "Towela Nyirenda-Jere", "Sarah Luger", "Mercy Nyamewaa Asiedu"],
+    "venue": "ACM FAccT 2025 (Best Paper Honourable Mention)",
+    "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   },
   {
     "id": "project2",
-    "title": "A Unifying Variational Framework for Gaussian Process Motion Planning",
-    "description": "In this paper, we introduce a framework for motion planning based on variational Gaussian Processes, which unifies various probabilistic-inference-based motion planning algorithms. We evaluate our method on a challenging obstacle avoidance task in the Pybullet simulator and on a physical manipulator robot.",
-    "imageURL": "images/2_vgpmp/vgpmp_boxes_end_lines.png",
-    "hoverImageURL": "images/2_vgpmp/vgpmp_plot_grasp_short_3.jpg",
-    "authors": ["Lucas Cosier", "Rares Iordan", "Sicelukwanda Zwane", "Giovanni Franzese", "James T. Wilson", "Marc Peter Deisenroth", "Alexander Terenin", "Yasemin Bekiroglu"],
-    "venue": "AISTATS 2024",
-    "paperURL":"https://arxiv.org/abs/2309.00854",
-    "projectURL":"https://papers.avt.im/vgpmp-motion-planning/",
-    "codeURL": "https://github.com/luke-ck/vgpmp"
+    "title": "VisoGender: A Dataset for Benchmarking Gender Bias in Image-Text Pronoun Resolution",
+    "description": "Built a dataset of 690 images covering 23 occupations to benchmark gender bias in vision-language models. Evaluated 6 vision-language encoders (including CLIP, OpenCLIP, SLIP) and 2 captioning models (BLIP-2, GIT). Found that in different-gender scenes, vision-language encoders performed worse than random chance, proving they rely on bag-of-words correlations rather than true compositional understanding.",
+    "authors": ["Siobhan Mackenzie Hall", "Candice Schumann", "Lucia Volanová", "Enes Altinisik", "Alina Landowska", "Ioana Baldini"],
+    "venue": "NeurIPS 2023",
+    "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   },
   {
     "id": "project3",
-    "title": "Safe Trajectory Sampling in Model-based Reinforcement Learning",
-    "description": "We present a data-efficient method for enforcing safety constraints in model-based reinforcement learning, ensuring safe trajectories for real robots. Our method integrates user-specified requirements and employing Gaussian processes to maintain complex predictive state distributions.",
-    "imageURL": "images/3_safembrl/lim-z.png",
-    "authors": ["Sicelukwanda Zwane", "Denis Hadjivelichkov", "Yicheng Luo", "Yasemin Bekiroglu", "Dimitrios Kanoulas", "Marc P. Deisenroth"],
-    "venue": "CASE 2023",
-    "paperURL":"https://dkanou.github.io/publ/P44__Zwane_CASE_2023.pdf",
-    "projectURL":"https://www.sml-group.cc/blog/2023-safe-sampling/"
+    "title": "A Prompt Array Keeps the Bias Away: Debiasing Vision-Language Models with Adversarial Learning",
+    "description": "Proposed an adversarial learning framework to debias vision-language models without large-scale retraining. Used frozen CLIP encoders with learnable prompt tokens and multi-layer perceptron adversaries. Jointly optimised adversarial loss and image-text contrastive loss, achieving less than 1% drop in zero-shot ImageNet accuracy whilst reducing bias. Discovered that standard NLP bias metrics (WEAT) were mathematically brittle in multimodal contexts.",
+    "authors": ["Sasha Luccioni", "Yacine Jernite", "Christopher Akiki", "Siobhan Mackenzie Hall", "Margaret Mitchell", "Alexandra Sasha Luccioni"],
+    "venue": "AACL 2022",
+    "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   },
   {
     "id": "project4",
-    "title": "One-Shot Transfer of Affordance Regions? AffCorrs!",
-    "description": "Our model, AffCorrs, uses a single reference image with annotated affordance regions to segment semantically corresponding parts within a target scene. It leverages pre-trained DINO-ViT's image descriptors and cyclic correspondences, enabling both intra- and inter-class one-shot part segmentation.",
-    "imageURL": "images/4_affcorrs/affcorrs-2.gif",
-    "authors": ["Denis Hadjivelichkov", "Sicelukwanda Zwane", "Lourdes Agapito", "Marc P. Deisenroth", "Dimitrios Kanoulas"],
-    "venue": "CoRL 2022",
-    "paperURL":"https://arxiv.org/abs/2209.07147",
-    "projectURL":"https://sites.google.com/view/affcorrs",
-    "codeURL": "https://github.com/RPL-CS-UCL/UCL-AffCorrs"
-  },
-  {
-    "id": "project6",
-    "title": "Using Mixture Density Networks to Model Continuous Action Priors",
-    "authors": ["Sicelukwanda Zwane", "Supervised by Benjamin Rosman and Pravesh Ranchod"],
-    "venue":"MSc Dissertation 2019 - University of the Witwatersrand",
-    "description": "As part of my MSc Dissertation, I investigated knowledge reuse in the context of continuous control reinforcement learning. I developed a method for learning a multi-modal distribution over expert action preferences in a given environment. A new agent in this environment could use this ditribution to explore and learn more efficiently.",
-    "imageURL": "images/6_msc/Champ.png"
+    "title": "SMRS: Advocating a Unified Reporting Standard for Surrogate Models",
+    "description": "Position paper advocating for standardised reporting practices in surrogate modelling to ensure reproducibility and transparency. Addresses the challenge of using artificial neural networks as surrogates for computationally expensive physics simulations, particularly in the context of computational neuroscience and electrode design.",
+    "authors": ["Siobhan Mackenzie Hall", "Brian Andrews", "James FitzGerald"],
+    "venue": "NeurIPS 2025 Position Paper",
+    "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   },
   {
     "id": "project5",
-    "title": " Safer Exploration in Deep Reinforcement Learning with Action Priors ",
-    "description": "In this work, we model action priors (the distribution over expert actions) using a Gaussian process and used it as an exploration policy for a deep reinforcement learning agent, promoting safe, sample-efficient learning.",
-    "imageURL": "images/5_safeexp/uncertainty.png",
-    "hoverImageURL": "images/5_safeexp/pothols.png",
-    "authors": ["Sicelukwanda Zwane", "Tlou Boloka", "Ndivhuwo Makondo", "Benjamin Rosman"],
-    "venue":"Black in AI workshop (NeurIPS 2018)",
-    "paperURL": "https://github.com/blackinai/bai-sample-papers/blob/main/papers/Zwane_BAI2018.pdf"
+    "title": "Finite Element Modelling for Biophysical Models of Cortical Stimulation: A Computational Framework",
+    "description": "Developed a comprehensive modelling pipeline coupling finite element modelling (COMSOL) with biophysical neuron modelling (NEURON/Python) to optimise electrode geometry for brain mapping. Implemented adaptive meshing to resolve high-gradient areas near electrodes whilst saving computational resources. Built surrogate models using artificial neural networks in PyTorch to predict neural activation, significantly reducing computational demands compared to full biophysical simulations.",
+    "authors": ["Siobhan Mackenzie Hall", "Brian Andrews", "James FitzGerald"],
+    "venue": "IEEE TNSRE 2025",
+    "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
+  },
+  {
+    "id": "project6",
+    "title": "The Human Labour of Data Work: Understanding the Challenges of Data Collection in the Global South",
+    "description": "Investigates the human labour involved in data collection processes, particularly focusing on challenges faced by communities in the Global South. Examines the intersection of responsible AI, data diversity, and the often-invisible work of data contributors. Highlights the need for ethical data collection practices that centre community voices and ensure fair compensation for data labour.",
+    "authors": ["Siobhan Mackenzie Hall", "Baleine Naumi", "Elizabeth Bondi-Kelly"],
+    "venue": "CSCW 2025",
+    "paperURL": "https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en"
   }
 ]

@@ -1,24 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root{
-  --card-bg: linear-gradient(135deg,  #ffffffd3, #b3f2dd90, #ffffffd3);
-  --card-bg-hover: linear-gradient(135deg, #b3f2dd90, #ffffffd3, #b3f2dd90);
-  --timeline-card-bg: #44b3f848;
-  --timeline-card-bg-hover: #44b3f88c;
-  --card-border: 1px solid #aaa;
-  --header-bg: linear-gradient(-45deg,  #ffffffa5, #ffffff2a);
+  /* Purple palette colors */
+  --dark-amethyst: #231942;
+  --dusty-grape: #5e548e;
+  --amethyst-smoke: #9f86c0;
+  --lilac: #be95c4;
+  --pink-orchid: #e0b1cb;
+
+  /* Component backgrounds */
+  --card-bg: linear-gradient(135deg, #ffffff, #e0b1cb40, #be95c440);
+  --card-bg-hover: linear-gradient(135deg, #e0b1cb50, #be95c450, #9f86c050);
+  --timeline-card-bg: #9f86c048;
+  --timeline-card-bg-hover: #9f86c08c;
+  --card-border: 1px solid #be95c4;
+  --header-bg: linear-gradient(-45deg, #e0b1cba5, #9f86c05a, #5e548e3a);
 }
 
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Serif", serif;
-  font-optical-sizing: auto;
+  font-family: "Arial Nova", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "GRAD" 0;
+  color: #231942;
 }
 
 .App {
@@ -45,6 +50,12 @@ body, html {
   100% { background-position: 0% 50%; }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: var(--dark-amethyst);
+}
+
 .App-header {
   background: var(--header-bg);
   background-size: 400% 400%;
@@ -57,12 +68,12 @@ body, html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+  color: var(--dark-amethyst);
   margin-bottom: 2rem;
 }
 
 .App a{
-  color: #007bff; /* Bright blue, adjust as needed */
+  color: var(--dusty-grape);
 }
 
 .App-header p {
@@ -72,23 +83,23 @@ body, html {
 
 .App-header h2 {
   color: #ffffff;
-  background:  #000000;
+  background: var(--dark-amethyst);
 }
 
 .App-header a {
-  color: #000dc7; /* Bright blue, adjust as needed */
+  color: var(--dusty-grape);
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .App-header a:hover, a:focus {
-  color: #0056b3; /* Darker shade for contrast */
+  color: var(--dark-amethyst);
   text-decoration: underline;
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--amethyst-smoke);
 }
 
 @keyframes App-logo-spin {
@@ -164,9 +175,7 @@ body, html {
   display: inline-block;
   margin: 0em 0.5em;
   padding: 0.5em 0.5em;
-  /* background-color: #007bff; */
-  color: #007bff;
-  /* text-decoration: none; */
+  color: var(--dusty-grape);
   border-radius: 4px;
   transition: background-color 0.2s;
   align-self: center;
@@ -176,12 +185,11 @@ body, html {
 }
 
 .ProjectCard a:hover, a:focus {
-  /* background-color: #0056b3; */
-  color: #0056b3;
+  color: var(--dark-amethyst);
   text-decoration: underline;
 }
 .ProjectCard a:visited {
-  /* background-color: #0056b3; */
+  color: var(--dusty-grape);
 }
 
 
@@ -285,8 +293,8 @@ body, html {
   left: 30px;
   top: 0;
   bottom: 0;
-  width: 2px; 
-  background-color: #cbc6c6; 
+  width: 2px;
+  background-color: var(--lilac);
 }
 
 .timeline-item::before {
@@ -296,7 +304,7 @@ body, html {
   top: 50%;
   height: 12px; /* Dot size */
   width: 12px; /* Dot size */
-  background-color: #333; /* Dot color */
+  background-color: var(--dusty-grape); /* Dot color */
   border-radius: 50%;
   z-index: 1;
 }
@@ -305,7 +313,7 @@ body, html {
   width: 150px; /* Adjust size as needed */
   height: 150px; /* Adjust size as needed */
   border-radius: 40%; /* Creates the circular frame */
-  border: 2px solid #aea6a6; /* Optional: Adds a border around the image */
+  border: 2px solid var(--amethyst-smoke); /* Optional: Adds a border around the image */
   object-fit: cover; /* Ensures the image covers the frame without distortion */
 }
 
@@ -314,12 +322,12 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #000000; /* Or any color fitting your theme */
+  background-color: var(--dark-amethyst);
   text-align: left;
   z-index: 1000; /* Ensures it stays above other content */
   padding: 10px 0;
   padding-left : 30px;
-  margin:0; 
+  margin:0;
 }
 
 .attribution {

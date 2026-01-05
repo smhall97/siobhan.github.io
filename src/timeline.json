@@ -5,43 +5,70 @@
     "company": "University of Oxford",
     "location": "Oxford, United Kingdom",
     "company_link": "https://www.ox.ac.uk",
-    "duration": "2020 - Present",
-    "description": "I am pursuing a DPhil in computational neuroscience and AI fairness at the Oxford Neural Interfacing Group."
+    "duration": "October 2021 - Present",
+    "description": "Pursuing a DPhil in computational neuroscience at the Oxford Neural Interfacing Group. Building a pipeline coupling finite element modelling (COMSOL) with biophysical neuron modelling (NEURON/Python) to optimise electrode geometry for cortical stimulation and brain mapping. Developing surrogate models using artificial neural networks to predict neural activation, replacing computationally expensive physics simulations."
   },
   {
     "id": 2,
-    "title": "PhD Research Intern - Mobile Robotics",
-    "company": "National Institute of Advanced Industrial Science and Technology (AIST)",
-    "company_link": "https://www.aist.go.jp/index_en.html",
-    "location": "Tokyo, Japan",
-    "duration": "2024 - 2024 (3 - months)",
-    "description": "During this internship, I worked on safe motion planning with mobile robots in crowded spaces (shopping malls, science museums, etc) using generative models."
+    "title": "Research Intern",
+    "company": "Google DeepMind",
+    "company_link": "https://deepmind.google",
+    "location": "London, United Kingdom",
+    "duration": "September 2024 - February 2025",
+    "description": "Contributed to research and development of regularisation methods for model adaptation during fine-tuning to mitigate spurious correlations. Evaluated models using accuracy, worst-group accuracy, and demographic parity metrics. Focused on fairness in AI and improving robustness on out-of-distribution tasks."
   },
   {
     "id": 3,
-    "title": "Postgraduate Teaching Assistant",
-    "company": "University College London",
-    "company_link": "https://www.ucl.ac.uk",
-    "location": "London, United Kingdom",
-    "duration": "2020 - 2023",
-    "description": "I helped develop and assess student coursework in C++ (covering robot sensing, interaction, and manipulation)."
+    "title": "Engineering Intern",
+    "company": "Microsoft Research",
+    "company_link": "https://www.microsoft.com/en-us/research/",
+    "location": "Cambridge, United Kingdom",
+    "duration": "May 2024 - August 2024",
+    "description": "Architected platform infrastructure for data-centric AI, supporting responsible data collection for under-represented communities. Built data ingestion APIs and developed image recognition models using few-shot learning in PyTorch. Collaborated with social scientists to ensure data taxonomy reflected real-world nuance for long-tail concepts."
   },
   {
     "id": 4,
-    "title": "Data Scientist",
-    "company": "Explore AI",
-    "company_link": "https://www.explore.ai",
+    "title": "Software Engineer (Part-time)",
+    "company": "Mamba Insights",
+    "company_link": "https://mamba-insights.com",
     "location": "Johannesburg, South Africa",
-    "duration": "2019 - 2020",
-    "description": "I was part of a team developing data-science training courses for corporate South Africa mean new graduates."
+    "duration": "September 2020 - July 2021",
+    "description": "Engineered computer vision pipeline using YOLO (PyTorch) and OpenCV to extract business intelligence from CCTV footage for agricultural compliance monitoring. Developed custom temporal algorithms for activity tracking. Deployed models to production on edge devices in June 2021, processing noisy real-world data in resource-constrained environments."
   },
   {
     "id": 5,
-    "title": "MSc Research Intern - Field Robotics",
-    "company": "Council for Scientific and Industrial Research (CSIR)",
-    "company_link": "https://www.csir.co.za",
+    "title": "Cognitive Systems Neuroscience Internship",
+    "company": "University of Amsterdam",
+    "company_link": "https://www.uva.nl/en",
+    "location": "Amsterdam, Netherlands",
+    "duration": "May 2020 - March 2021",
+    "description": "Built data processing pipeline in MATLAB for Granger causal analysis to decode neural communication pathways during attention and decision-making tasks. Analysed high-frequency electrocorticography (ECoG) data from macaques. Implemented parallel processing loops to reduce analysis time from days to hours."
+  },
+  {
+    "id": 6,
+    "title": "Master of Physiotherapy (MPhysT)",
+    "company": "Stellenbosch University",
+    "company_link": "https://www.sun.ac.za/english",
+    "location": "Stellenbosch, South Africa",
+    "duration": "2018 - 2019",
+    "description": "Researched within the Biomedical Engineering Research Group. Thesis: 'Determining the Nature of Free Will Using Machine Learning'. Trained convolutional neural networks (CNNs) on electrocorticographic (ECoG) data using Python, TensorFlow, MATLAB, and EEGLab to classify decision-making states."
+  },
+  {
+    "id": 7,
+    "title": "Bachelor of Physiotherapy (BPhysT)",
+    "company": "University of Pretoria",
+    "company_link": "https://www.up.ac.za",
     "location": "Pretoria, South Africa",
-    "duration": "2017 - 2019",
-    "description": "This internship ran alongside my masters degree. My additional responsibilities included developing and maintaining software for control and perception of a mobile manipulator robot."
+    "duration": "2013 - 2016",
+    "description": "Graduated Cum Laude with 78% average. Conducted a randomised control trial (RCT) investigating the effect of positive expiratory pressure on airway hyper-reactivity at Steve Biko Academic Hospital. Gained foundation in anatomy, physiology, neurology, and biomechanics that informs current computational neuroscience work."
+  },
+  {
+    "id": 8,
+    "title": "Community Service Physiotherapist",
+    "company": "Tembisa Provincial Tertiary Hospital",
+    "company_link": "https://www.gauteng.gov.za",
+    "location": "Tembisa, South Africa",
+    "duration": "2017",
+    "description": "Worked in resource-constrained government hospital managing caseloads in adult and neonatal intensive care units (ICU), burns units, and neurology wards. Applied diagnostic logic to complex biological systems under extreme time pressure in multidisciplinary teams."
   }
 ]
