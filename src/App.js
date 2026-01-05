@@ -1,0 +1,79 @@
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import ProjectCard from './ProjectCard';
+import projectsData from './projects.json';
+import ExperienceTimeline from './ExperienceTimeline';
+import experiencesData from './timeline.json';
+
+function App() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    // This assumes your projects.json is stored in the public folder
+    // If it's in src, you can directly import it as done above
+    setProjects(projectsData);
+  }, []);     
+  return (
+    <div className="App"
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/images/website_bg_blue.png)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed', // Keeps the image fixed during scrolling
+        minHeight: '100vh',
+      }}
+    >
+      <header className="App-header">
+        <h2 className="fixed-name">Siobhan Mackenzie Hall</h2>
+        <h1>About me</h1>
+        <img src={`${process.env.PUBLIC_URL}/images/SMHall.jpg`} alt="Profile" className="profile-photo"/>
+        <p>
+          {/* My recent reach interests include planning under uncertainty, robotics for the circular economy, soft robotics, and planning with diffusion. */}
+          I am a DPhil Candidate student at
+          the <a href="https://www.ox.ac.uk/">University of Oxford</a>, <a href="https://www.nds.ox.ac.uk/research/oxford-neural-interfacing">Oxford Neural Interfacing Group</a>,
+          where I worked on computational neuroscience and AI fairness.
+        </p>
+        <p>
+        <a href="https://github.com/smhall97" target="_blank" rel="noopener noreferrer">
+          Github
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/siobhan-mackenzie-hall-805255bb/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="mailto:hall.sm2020@gmail.com" target="_blank" rel="noopener noreferrer">
+          Email
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+          Google Scholar
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="CV.pdf" target="_blank" rel="noopener noreferrer">
+        CV
+        </a>
+        
+        </p>
+      </header>
+      <h1>Projects & Publications</h1>
+      <div className="Projects-container">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+      <h1>Roles & Experience</h1>
+      <h4>More detailed CV available
+      &nbsp;<a href="CV.pdf" target="_blank" rel="noopener noreferrer">
+        here</a>
+      </h4>
+      <ExperienceTimeline experiences={experiencesData}/>
+      <div className="attribution">
+        <h6>Copyright © 2024 Sicelukwanda Zwane. All Rights Reserved. &nbsp;</h6>
+      </div> 
+    </div>
+  );
+}
+
+export default App;
