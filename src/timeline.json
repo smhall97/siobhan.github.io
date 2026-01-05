@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Doctoral Student",
-    "company": "University College London",
-    "location": "London, United Kingdom",
-    "company_link": "https://www.ucl.ac.uk",
+    "title": "DPhil Candidate",
+    "company": "University of Oxford",
+    "location": "Oxford, United Kingdom",
+    "company_link": "https://www.ox.ac.uk",
     "duration": "2020 - Present",
-    "description": "I am pursuing a PhD in AI and robotics under the supervision of Professor Marc deisenroth and Professor Dimitrios Kanoulas."
+    "description": "I am pursuing a DPhil in computational neuroscience and AI fairness at the Oxford Neural Interfacing Group."
   },
   {
     "id": 2,
