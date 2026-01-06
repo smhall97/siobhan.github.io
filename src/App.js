@@ -108,7 +108,7 @@ function App() {
       <h1 id="contact">Contact</h1>
       <div style={{ padding: '20px', maxWidth: '700px', margin: '0 auto' }}>
         <p>
-          Feel free to reach out to me at: <strong>siobhan.hall [at] nds.ox.ac.uk</strong>
+          Please feel welcome to reach out to me via email: <strong>siobhan.hall [at] nds.ox.ac.uk</strong>
         </p>
       </div>
       <div className="attribution">
