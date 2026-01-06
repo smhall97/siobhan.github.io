@@ -36,10 +36,15 @@ function App() {
     { id: 10, content: "January 2024: I am the Chair for the Deep Learning Indaba's Mentorship Programme " },
     { id: 11, content: "December 2023: I am in New Orleans, United States for NeurIPS" },
     { id: 12, content: "September 2023: I am in Accra, Ghana for the Deep Learning Indaba" },
-    { id: 13, content: "May 2023: I am in Cape Town for the IBRO-Simons Computational Neuroscience Imbizo" },
+    { id: 13, content: "May 2023: I am in Cape Town, South Africa for the IBRO-Simons Computational Neuroscience Imbizo" },
     { id: 14, content: "January 2023: I am the Communications Chair for the Deep Learning Indaba" },
     { id: 15, content: "September 2022: I am in Tunis, Tunisia for the Deep Learning Indaba" },
-    { id: 16, content: "October 2021: I started my DPhil at the University of Oxford with the Oxford Neural Interfacing Group" },
+    {
+      id: 16,
+      content: (
+        <>October 2021: I started my DPhil at the University of Oxford with the <a href="https://www.nds.ox.ac.uk/team/siobhan-hall" target="_blank" rel="noopener noreferrer">Oxford Neural Interfacing Group</a></>
+      )
+    },
     {
       id: 17,
       content: (
