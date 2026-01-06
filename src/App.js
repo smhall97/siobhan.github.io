@@ -142,15 +142,15 @@ function App() {
           </button>
         )}
       </section>
-      <h1 id="publications">Projects & Publications</h1>
+      <h1 id="publications">Publications</h1>
       <div className="Projects-container">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
       <h1 id="experience">Roles & Experience</h1>
-      <h4>More detailed CV available
-      &nbsp;<a href="CV.pdf" target="_blank" rel="noopener noreferrer">
+      <h4>A more detailed CV is available&nbsp;
+      <a href="CV.pdf" target="_blank" rel="noopener noreferrer">
         here</a>
       </h4>
       <ExperienceTimeline experiences={experiencesData}/>
