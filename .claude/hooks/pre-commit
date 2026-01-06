@@ -1,12 +1,20 @@
 #!/bin/bash
 # Claude Code Pre-Commit Hook
-# Prevents commits directly to the main branch
+# Prevents direct commits to main, but allows merge commits for deployment
 
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 if [ "$CURRENT_BRANCH" = "main" ]; then
+  # Check if this is a merge commit
+  if [ -f .git/MERGE_HEAD ]; then
+    # This is a merge commit - allow it (for deployment)
+    echo "✓ Merge commit to main allowed (deployment workflow)"
+    exit 0
+  fi
+
+  # This is a direct commit to main - block it
   echo ""
-  echo "❌ ERROR: You are attempting to commit to the main branch"
+  echo "❌ ERROR: You are attempting to commit directly to the main branch"
   echo ""
   echo "The main branch is production-only and auto-deploys to GitHub Pages."
   echo "ALL development work must happen on the dev branch."
