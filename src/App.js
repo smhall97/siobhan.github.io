@@ -152,7 +152,7 @@ function App() {
       <h1 id="experience">Roles & Experience</h1>
       <h4>A more detailed CV is available&nbsp;
       <a href="CV.pdf" target="_blank" rel="noopener noreferrer">
-        here</a>
+        here.</a>
       </h4>
       <ExperienceTimeline experiences={experiencesData}/>
       <h1 id="contact">Contact</h1>
