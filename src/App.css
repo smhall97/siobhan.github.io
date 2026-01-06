@@ -81,6 +81,11 @@ h1, h2, h3, h4, h5, h6 {
   max-width : 700px;
 }
 
+.App-header .bio-text {
+  font-size: 24px;
+  max-width: 700px;
+}
+
 .App-header h2 {
   color: #ffffff;
   background: var(--dark-amethyst);
@@ -100,6 +105,70 @@ h1, h2, h3, h4, h5, h6 {
 
 .App-link {
   color: var(--amethyst-smoke);
+}
+
+/* Social Links Row */
+.social-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.social-links-row a {
+  font-weight: 700;
+  color: var(--dusty-grape);
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.social-links-row a:hover,
+.social-links-row a:focus {
+  color: var(--dark-amethyst);
+  text-decoration: underline;
+}
+
+/* Update Log Section */
+.update-log-section {
+  background: var(--header-bg);
+  background-size: 400% 400%;
+  animation: gradientShift 7s ease infinite;
+  padding: 30px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-amethyst);
+}
+
+.update-log-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  width: 100%;
+}
+
+.update-log-entry {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.update-log-entry::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--dusty-grape);
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 @keyframes App-logo-spin {
@@ -234,6 +303,20 @@ h1, h2, h3, h4, h5, h6 {
   /* .ProjectCard h2 {
     font-size: 1.2em;
   } */
+
+  .App-header .bio-text {
+    font-size: 20px;
+  }
+
+  .social-links-row {
+    gap: 1rem;
+    padding: 0 10px;
+  }
+
+  .update-log-entry {
+    font-size: 16px;
+    padding-left: 1.2rem;
+  }
 
 }
 
