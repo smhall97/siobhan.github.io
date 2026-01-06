@@ -4,8 +4,8 @@
   "icons": [
 
     {
-      "src": "images/SMHall.jpg",
-      "type": "image/jpg",
+      "src": "images/SMHall.webp",
+      "type": "image/webp",
       "sizes": "1912x1811 196x196"
     }
   ],
