@@ -88,7 +88,7 @@ function App() {
       <section className="update-log-section">
         <h3>Recent News</h3>
         <ul className="update-log-list">
-          <li className="update-log-entry">October 2025: I submitted my thesis in October 2025!</li>
+          <li className="update-log-entry">October 2025: I submitted my thesis!</li>
           <li className="update-log-entry">October - December 2025: I joined the University of Cambridge's CHIA Lab as a research assistant</li>
           <li className="update-log-entry">Septembert 2025: I am the Chair for the 2025 Deep Learning Indaba's Ideathon</li>
           <li className="update-log-entry">August 2025: I attended the Deep Learning Indaba in Kigali</li>
