@@ -278,7 +278,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 20px;
   margin-left: 40px;
   margin-right: 40px;
-  max-width:700px;
+  width: 700px; /* Fixed width for consistency */
+  max-width: calc(100vw - 120px); /* Responsive fallback for small screens */
   background: var(--timeline-card-bg); /* Light background for the items */
   border: var(--card-border); /* Subtle border */
   border-radius: 8px; /* Soft rounded corners */
@@ -305,13 +306,17 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -46px; /* Half the width of the dot to center it on the line */
+  left: -34px; /* Centered on the vertical line */
   top: 50%;
   height: 12px; /* Dot size */
   width: 12px; /* Dot size */
   background-color: var(--dusty-grape); /* Dot color */
   border-radius: 50%;
   z-index: 1;
+}
+
+.timeline-item h4 {
+  margin-bottom: 0;
 }
 
 .timeline-location {
