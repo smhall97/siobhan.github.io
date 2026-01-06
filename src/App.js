@@ -62,37 +62,40 @@ function App() {
 
         <h1 id="about">About me</h1>
         <img src={`${process.env.PUBLIC_URL}/images/SMHall.jpg`} alt="Profile" className="profile-photo"/>
-        <p>
+        <div className="social-links-row">
+          <a href="https://github.com/smhall97" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
+          <a href="https://www.linkedin.com/in/siobhan-mackenzie-hall-805255bb/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="#contact">
+            Email
+          </a>
+          <a href="https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+            Google Scholar
+          </a>
+          <a href="CV.pdf" target="_blank" rel="noopener noreferrer">
+            CV
+          </a>
+        </div>
+        <p className="bio-text">
           I am a DPhil Candidate at
           the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford</a>, <a href="https://www.nds.ox.ac.uk/research/oxford-neural-interfacing" target="_blank" rel="noopener noreferrer">Oxford Neural Interfacing Group</a>,
           where I work on computational neuroscience and AI fairness.
         </p>
-        <p>
-          Plot twist: I submitted my thesis in October 2025!
-        </p>
-        <p>
-        <a href="https://github.com/smhall97" target="_blank" rel="noopener noreferrer">
-          Github
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://www.linkedin.com/in/siobhan-mackenzie-hall-805255bb/" target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#contact">
-          Email
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-          Google Scholar
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="CV.pdf" target="_blank" rel="noopener noreferrer">
-        CV
-        </a>
-
-        </p>
       </header>
+      <section className="update-log-section">
+        <ul className="update-log-list">
+          <li className="update-log-entry">Plot twist: I submitted my thesis in October 2025!</li>
+          <li className="update-log-entry">October - December 2025: I joined the University of Cambridge's CHIA Lab as a research assistant to support engineering development for project understanding the effects of human-AI interaction</li>
+          <li className="update-log-entry">August 2025: I attended the Deep Learning Indaba in Kigali</li>
+          <li className="update-log-entry">June 2025: Our paper, The World Wide Recipe received a Best Paper Honourable Mention at FAccT 2025!</li>
+          <li className="update-log-entry">September 2024 - February 2025: I worked at Google DeepMind as a Research Intern on fairness in fine-tuning</li>
+          <li className="update-log-entry">May - August 2024: I worked at Microsoft Research as an Engineering Intern on a data flywheel for under-represented communities</li>
+          <li className="update-log-entry">2024: I was awarded $20,000 in OpenAI API credits for my work investigating social biases</li>
+        </ul>
+      </section>
       <h1 id="publications">Projects & Publications</h1>
       <div className="Projects-container">
         {projects.map((project) => (
