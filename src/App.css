@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -36px; /* Centered on the vertical line */
+  left: -46px; /* Aligned with vertical line at 30px: -(40px margin + 20px padding - 30px line + 6px half-dot) */
   top: 50%;
   height: 12px; /* Dot size */
   width: 12px; /* Dot size */
