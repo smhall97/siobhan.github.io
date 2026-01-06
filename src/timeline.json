@@ -28,6 +28,24 @@
   },
   {
     "id": 4,
+    "title": "Ideathon Programme",
+    "company": "Deep Learning Indaba",
+    "company_link": "https://deeplearningindaba.com",
+    "location": "Remote",
+    "duration": "2022 - 2025",
+    "description": "Chair: 2025. Assist in planning and managing the programme to facilitate research and application-based projects on the African continent"
+  },
+  {
+    "id": 5,
+    "title": "Chair: Communications Committee",
+    "company": "Deep Learning Indaba",
+    "company_link": "https://deeplearningindaba.com",
+    "location": "Remote",
+    "duration": "2022 - Present",
+    "description": "Manage and support external communications from the Deep Learning Indaba, most notably as editor of the Sauti Yetu newsletter"
+  },
+  {
+    "id": 6,
     "title": "Software Engineer (Part-time)",
     "company": "Mamba Insights",
     "location": "Remote",
@@ -35,16 +53,7 @@
     "description": "Created unique algorithms to generate business insights based on the inference of deep learning models on CCTV footage. These were deployed to production in June 2021"
   },
   {
-    "id": 5,
-    "title": "Data Science Internship",
-    "company": "Aerobotics",
-    "company_link": "https://www.aerobotics.com",
-    "location": "Cape Town, South Africa",
-    "duration": "December 2019 - February 2020",
-    "description": "Developed an automated feedback loop for assessment of model accuracy in automatic labelling of fruit. These labelled data and models laid the foundation for further investigation into methods for automated assessment and is an open question"
-  },
-  {
-    "id": 6,
+    "id": 7,
     "title": "Cognitive Systems Neuroscience Internship",
     "company": "University of Amsterdam",
     "company_link": "https://www.uva.nl/en",
@@ -53,7 +62,25 @@
     "description": "Built data processing pipeline in MATLAB for Granger causal analysis to decode neural communication pathways during attention and decision-making tasks. Analysed high-frequency electrocorticography (ECoG) data from macaques. Implemented parallel processing loops to reduce analysis time from days to hours."
   },
   {
-    "id": 7,
+    "id": 8,
+    "title": "Chair: Mentorship Programme",
+    "company": "Deep Learning Indaba",
+    "company_link": "https://deeplearningindaba.com",
+    "location": "Remote",
+    "duration": "2020 - Present",
+    "description": "We have facilitated > 600 successful matches, with many success stories of papers being accepted and mentees successfully getting into postgraduate programmes"
+  },
+  {
+    "id": 9,
+    "title": "Data Science Internship",
+    "company": "Aerobotics",
+    "company_link": "https://www.aerobotics.com",
+    "location": "Cape Town, South Africa",
+    "duration": "December 2019 - February 2020",
+    "description": "Developed an automated feedback loop for assessment of model accuracy in automatic labelling of fruit. These labelled data and models laid the foundation for further investigation into methods for automated assessment and is an open question"
+  },
+  {
+    "id": 10,
     "title": "Master's Degree: Biomedical Engineering Research Group",
     "company": "Stellenbosch University",
     "company_link": "https://www.sun.ac.za/english",
@@ -62,7 +89,7 @@
     "description": "Thesis: Determining the nature of free will using machine learning"
   },
   {
-    "id": 8,
+    "id": 11,
     "title": "Community Service Physiotherapist",
     "company": "Tembisa Provincial Tertiary Hospital",
 
@@ -71,7 +98,7 @@
     "description": "Frontline clinical physiotherapist, working in multidisciplinary teams in high-pressured departments such as adult and neonatal intensive care units and out-patient departments"
   },
   {
-    "id": 9,
+    "id": 12,
     "title": "Bachelor of Physiotherapy (BPhysT)",
     "company": "University of Pretoria",
     "company_link": "https://www.up.ac.za",
