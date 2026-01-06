@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import ProjectCard from './ProjectCard';
 import projectsData from './projects.json';
@@ -7,6 +7,15 @@ import experiencesData from './timeline.json';
 
 function App() {
   const projects = projectsData;
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <div className="App"
@@ -21,12 +30,36 @@ function App() {
     >
       <header className="App-header">
         <h2 className="fixed-name"><a href="#about">Siobhan Mackenzie Hall</a></h2>
-        <nav className="nav-menu">
-          <a href="#about">About</a>
-          <a href="#publications">Publications</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
+
+        {/* Hamburger Button - Mobile Only */}
+        <button
+          className="hamburger-menu"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMobileMenuOpen}
+        >
+          <span className="hamburger-icon"></span>
+          <span className="hamburger-icon"></span>
+          <span className="hamburger-icon"></span>
+        </button>
+
+        {/* Navigation Menu */}
+        <nav className={`nav-menu ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+          <a href="#about" onClick={closeMobileMenu}>About</a>
+          <a href="#publications" onClick={closeMobileMenu}>Publications</a>
+          <a href="#experience" onClick={closeMobileMenu}>Experience</a>
+          <a href="#contact" onClick={closeMobileMenu}>Contact</a>
         </nav>
+
+        {/* Overlay for mobile menu */}
+        {isMobileMenuOpen && (
+          <div
+            className="menu-overlay"
+            onClick={closeMobileMenu}
+            aria-hidden="true"
+          ></div>
+        )}
+
         <h1 id="about">About me</h1>
         <img src={`${process.env.PUBLIC_URL}/images/SMHall.jpg`} alt="Profile" className="profile-photo"/>
         <p>
