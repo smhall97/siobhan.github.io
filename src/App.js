@@ -61,7 +61,7 @@ function App() {
         )}
 
         <h1 id="about">About me</h1>
-        <img src={`${process.env.PUBLIC_URL}/images/SMHall.jpg`} alt="Profile" className="profile-photo"/>
+        <img src={`${process.env.PUBLIC_URL}/images/SMHall.webp`} alt="Profile" className="profile-photo"/>
         <div className="social-links-row">
           <a href="https://github.com/smhall97" target="_blank" rel="noopener noreferrer">
             Github
@@ -86,6 +86,7 @@ function App() {
         </p>
       </header>
       <section className="update-log-section">
+        <h3 style={{ textAlign: 'left' }}>Recent News</h3>
         <ul className="update-log-list">
           <li className="update-log-entry">Plot twist: I submitted my thesis in October 2025!</li>
           <li className="update-log-entry">October - December 2025: I joined the University of Cambridge's CHIA Lab as a research assistant to support engineering development for project understanding the effects of human-AI interaction</li>
