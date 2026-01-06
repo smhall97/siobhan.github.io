@@ -89,11 +89,16 @@ function App() {
         <ul className="update-log-list">
           <li className="update-log-entry">Plot twist: I submitted my thesis in October 2025!</li>
           <li className="update-log-entry">October - December 2025: I joined the University of Cambridge's CHIA Lab as a research assistant to support engineering development for project understanding the effects of human-AI interaction</li>
-          <li className="update-log-entry">August 2025: I attended the Deep Learning Indaba in Kigali, where I serve on the steering committee for the Mentorship Programme, Ideathon Programme, and Communications Committee</li>
+          <li className="update-log-entry">August 2025: I attended the Deep Learning Indaba in Kigali</li>
           <li className="update-log-entry">June 2025: Our paper, The World Wide Recipe received a Best Paper Honourable Mention at FAccT 2025!</li>
           <li className="update-log-entry">September 2024 - February 2025: I worked at Google DeepMind as a Research Intern</li>
+          <li className="update-log-entry">September 2024: I am in Dakar, Senegal for the Deep Learning Indaba</li>
           <li className="update-log-entry">May - August 2024: I worked at Microsoft Research as an Engineering Intern</li>
           <li className="update-log-entry">April 2024: I was awarded $20,000 in OpenAI API credits to support our work on World Wide Dishes</li>
+          <li className="update-log-entry">December 2023: I am in New Orleans, United States for NeurIPS</li>
+          <li className="update-log-entry">September 2023: I am in Accra, Ghana for the Deep Learning Indaba</li>
+          <li className="update-log-entry">May 2023: I am in Cape Town for the IBRO-Simons Computational Neuroscience Imbizo</li>
+          <li className="update-log-entry">September 2022: I am in Tunis, Tunisia for the Deep Learning Indaba</li>
           <li className="update-log-entry">October 2021: I started my DPhil at the University of Oxford with the Oxford Neural Interfacing Group</li>
           <li className="update-log-entry">November 2021: We hosted our final episode of <a href="https://www.youtube.com/@nervonline1850" target="_blank" rel="noopener noreferrer">NERV</a></li>
         </ul>
