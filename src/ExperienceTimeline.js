@@ -8,7 +8,7 @@ const ExperienceTimeline = ({ experiences }) => (
           <p>{exp.duration}</p>
           <h3>{exp.title}</h3>
           <a href={exp.company_link} target="_blank" rel="noopener noreferrer"><h4>{exp.company}</h4></a>
-          <h5>{exp.location}</h5>
+          <p className="timeline-location">{exp.location}</p>
           <p>{exp.description}</p>
         </div>
       ))}

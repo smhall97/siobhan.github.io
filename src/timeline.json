@@ -6,7 +6,7 @@
     "location": "Oxford, United Kingdom",
     "company_link": "https://www.ox.ac.uk",
     "duration": "October 2021 - Present",
-    "description": "Pursuing a DPhil in computational neuroscience at the Oxford Neural Interfacing Group. Building a pipeline coupling finite element modelling (COMSOL) with biophysical neuron modelling (NEURON/Python) to optimise electrode geometry for cortical stimulation and brain mapping. Developing surrogate models using artificial neural networks to predict neural activation, replacing computationally expensive physics simulations."
+    "description": "Thesis: Electrode Design for Localised Cortical Stimulation - A Computational Study"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "company_link": "https://deepmind.google",
     "location": "London, United Kingdom",
     "duration": "September 2024 - February 2025",
-    "description": "Contributed to research and development of regularisation methods for model adaptation during fine-tuning to mitigate spurious correlations. Evaluated models using accuracy, worst-group accuracy, and demographic parity metrics. Focused on fairness in AI and improving robustness on out-of-distribution tasks."
+    "description": "Contributed to the research and development of methods, such as regularisation, to adapt models in the fine-tuning stage to improve outcomes on standardised fairness metrics"
   },
   {
     "id": 3,
@@ -24,19 +24,28 @@
     "company_link": "https://www.microsoft.com/en-us/research/",
     "location": "Cambridge, United Kingdom",
     "duration": "May 2024 - August 2024",
-    "description": "Architected platform infrastructure for data-centric AI, supporting responsible data collection for under-represented communities. Built data ingestion APIs and developed image recognition models using few-shot learning in PyTorch. Collaborated with social scientists to ensure data taxonomy reflected real-world nuance for long-tail concepts."
+    "description": "Contributed to the research development and engineering of a data flywheel to support under-represented communities by building a platform to responsibly collate data and develop deep learning models for classifying and generating long-tail concepts"
   },
   {
     "id": 4,
     "title": "Software Engineer (Part-time)",
     "company": "Mamba Insights",
     "company_link": "https://mamba-insights.com",
-    "location": "Cape Town, South Africa",
+    "location": "Remote",
     "duration": "September 2020 - July 2021",
-    "description": "Engineered computer vision pipeline using YOLO (PyTorch) and OpenCV to extract business intelligence from CCTV footage for agricultural compliance monitoring. Developed custom temporal algorithms for activity tracking. Deployed models to production on edge devices in June 2021, processing noisy real-world data in resource-constrained environments."
+    "description": "Created unique algorithms to generate business insights based on the inference of deep learning models on CCTV footage. These were deployed to production in June 2021"
   },
   {
     "id": 5,
+    "title": "Data Science Internship",
+    "company": "Aerobotics",
+    "company_link": "https://www.aerobotics.com",
+    "location": "Cape Town, South Africa",
+    "duration": "December 2019 - February 2020",
+    "description": "Developed an automated feedback loop for assessment of model accuracy in automatic labelling of fruit. These labelled data and models laid the foundation for further investigation into methods for automated assessment and is an open question"
+  },
+  {
+    "id": 6,
     "title": "Cognitive Systems Neuroscience Internship",
     "company": "University of Amsterdam",
     "company_link": "https://www.uva.nl/en",
@@ -45,22 +54,13 @@
     "description": "Built data processing pipeline in MATLAB for Granger causal analysis to decode neural communication pathways during attention and decision-making tasks. Analysed high-frequency electrocorticography (ECoG) data from macaques. Implemented parallel processing loops to reduce analysis time from days to hours."
   },
   {
-    "id": 6,
-    "title": "Master of Physiotherapy (MPhysT)",
+    "id": 7,
+    "title": "Master's Degree: Biomedical Engineering Research Group",
     "company": "Stellenbosch University",
     "company_link": "https://www.sun.ac.za/english",
     "location": "Stellenbosch, South Africa",
     "duration": "2018 - 2019",
-    "description": "Researched within the Biomedical Engineering Research Group. Thesis: 'Determining the Nature of Free Will Using Machine Learning'. Trained convolutional neural networks (CNNs) on electrocorticographic (ECoG) data using Python, TensorFlow, MATLAB, and EEGLab to classify decision-making states."
-  },
-  {
-    "id": 7,
-    "title": "Bachelor of Physiotherapy (BPhysT)",
-    "company": "University of Pretoria",
-    "company_link": "https://www.up.ac.za",
-    "location": "Pretoria, South Africa",
-    "duration": "2013 - 2016",
-    "description": "Graduated Cum Laude with 78% average. Conducted a randomised control trial (RCT) investigating the effect of positive expiratory pressure on airway hyper-reactivity at Steve Biko Academic Hospital. Gained foundation in anatomy, physiology, neurology, and biomechanics that informs current computational neuroscience work."
+    "description": "Biomedical Engineering Research Group. Thesis: Determining the nature of free will using machine learning"
   },
   {
     "id": 8,
@@ -69,6 +69,15 @@
     "company_link": "https://www.gauteng.gov.za",
     "location": "Tembisa, South Africa",
     "duration": "2017",
-    "description": "Worked in resource-constrained government hospital managing caseloads in adult and neonatal intensive care units (ICU), burns units, and neurology wards. Applied diagnostic logic to complex biological systems under extreme time pressure in multidisciplinary teams."
+    "description": "Frontline clinical physiotherapist, working in multidisciplinary teams in high-pressured departments such as adult and neonatal intensive care units and out-patient departments"
+  },
+  {
+    "id": 9,
+    "title": "Bachelor of Physiotherapy (BPhysT)",
+    "company": "University of Pretoria",
+    "company_link": "https://www.up.ac.za",
+    "location": "Pretoria, South Africa",
+    "duration": "2013 - 2016",
+    "description": "Thesis: The effect of positive expiratory pressure on the airway hyper-reactivity in the partially controlled to uncontrolled adult asthma patient"
   }
 ]
