@@ -30,7 +30,6 @@
     "id": 4,
     "title": "Software Engineer (Part-time)",
     "company": "Mamba Insights",
-    "company_link": "https://mamba-insights.com",
     "location": "Remote",
     "duration": "September 2020 - July 2021",
     "description": "Created unique algorithms to generate business insights based on the inference of deep learning models on CCTV footage. These were deployed to production in June 2021"
