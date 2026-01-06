@@ -86,7 +86,7 @@ function App() {
         </p>
       </header>
       <section className="update-log-section">
-        <h3 style={{ alignSelf: 'flex-start', marginLeft: 'calc((100% - 700px) / 2)', maxWidth: '700px' }}>Recent News</h3>
+        <h3>Recent News</h3>
         <ul className="update-log-list">
           <li className="update-log-entry">October 2025: I submitted my thesis in October 2025!</li>
           <li className="update-log-entry">October - December 2025: I joined the University of Cambridge's CHIA Lab as a research assistant</li>

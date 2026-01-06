@@ -3,29 +3,44 @@
 ## Project Overview
 This is Siobhan Hall's personal portfolio website built with React and deployed on GitHub Pages.
 
-## Deployment Workflow
+## Git Workflow - MANDATORY
 
-### Branch Structure
-- `main` - Production branch (auto-deploys to GitHub Pages)
-- `dev` - Development branch for active work
+### Branch Rules (NON-NEGOTIABLE)
+⚠️ **CRITICAL**: NEVER commit directly to the `main` branch
 
-### How to Deploy Changes
+- `main` - Production-only branch (auto-deploys to GitHub Pages, NO direct commits)
+- `dev` - ALL development work happens here
 
-**IMPORTANT**: To deploy to production, push to the `main` branch:
+### Before ANY git commit:
+1. **ALWAYS verify you are on the dev branch**: Run `git branch` or `git status`
+2. **If on main, immediately switch to dev**: Run `git checkout dev`
+3. **NEVER use `git commit` while on main** - This will be blocked by pre-commit hook
+
+### Deployment Workflow
+
+To deploy changes to production:
 
 ```bash
+# Ensure dev is ready for production
+git checkout dev
+git status  # Verify everything is committed
+
+# Switch to main and merge
 git checkout main
 git merge dev
 git push origin main
+
+# Return to dev for continued work
+git checkout dev
 ```
 
 GitHub Pages automatically deploys from `main` within a few minutes.
 
 ## Development Guidelines
 
-1. **Make changes on `dev` branch** - All active development happens here
+1. **Make ALL changes on `dev` branch** - This is enforced by pre-commit hook
 2. **Test before merging** - Ensure changes work as expected
-3. **Merge to main to deploy** - Only merge to main when ready to go live
+3. **Merge to main ONLY to deploy** - Main is production-only, not for development
 4. **Keep context files updated** - Experience, projects, and publications in `siobhan_experience_context/`
 
 ## Project Structure
