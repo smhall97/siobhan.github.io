@@ -8,6 +8,7 @@ import experiencesData from './timeline.json';
 function App() {
   const projects = projectsData;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showAllNews, setShowAllNews] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -16,6 +17,38 @@ function App() {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+
+  const newsEntries = [
+    { id: 1, content: "October 2025: I submitted my thesis!" },
+    {
+      id: 2,
+      content: (
+        <>October - December 2025: I joined the University of Cambridge's CHIA Lab as a <a href="https://www.chia.cam.ac.uk/team/siobhan-hall" target="_blank" rel="noopener noreferrer">research assistant</a></>
+      )
+    },
+    { id: 3, content: "Septembert 2025: I am the Chair for the 2025 Deep Learning Indaba's Ideathon" },
+    { id: 4, content: "August 2025: I attended the Deep Learning Indaba in Kigali" },
+    { id: 5, content: "June 2025: Our paper, The World Wide Recipe received a Best Paper Honourable Mention at FAccT 2025!" },
+    { id: 6, content: "September 2024 - February 2025: I worked at Google DeepMind as a Research Intern" },
+    { id: 7, content: "September 2024: I am in Dakar, Senegal for the Deep Learning Indaba" },
+    { id: 8, content: "May - August 2024: I worked at Microsoft Research as an Engineering Intern" },
+    { id: 9, content: "April 2024: I was awarded $20,000 in OpenAI API credits to support our work on World Wide Dishes" },
+    { id: 10, content: "January 2024: I am the Chair for the Deep Learning Indaba's Mentorship Programme " },
+    { id: 11, content: "December 2023: I am in New Orleans, United States for NeurIPS" },
+    { id: 12, content: "September 2023: I am in Accra, Ghana for the Deep Learning Indaba" },
+    { id: 13, content: "May 2023: I am in Cape Town for the IBRO-Simons Computational Neuroscience Imbizo" },
+    { id: 14, content: "January 2023: I am the Communications Chair for the Deep Learning Indaba" },
+    { id: 15, content: "September 2022: I am in Tunis, Tunisia for the Deep Learning Indaba" },
+    { id: 16, content: "October 2021: I started my DPhil at the University of Oxford with the Oxford Neural Interfacing Group" },
+    {
+      id: 17,
+      content: (
+        <>November 2021: We hosted our final episode of <a href="https://www.youtube.com/@nervonline1850" target="_blank" rel="noopener noreferrer">NERV</a></>
+      )
+    }
+  ];
+
+  const visibleNews = showAllNews ? newsEntries : newsEntries.slice(0, 10);
 
   return (
     <div className="App"
@@ -88,24 +121,21 @@ function App() {
       <section className="update-log-section">
         <h3>Recent News</h3>
         <ul className="update-log-list">
-          <li className="update-log-entry">October 2025: I submitted my thesis!</li>
-          <li className="update-log-entry">October - December 2025: I joined the University of Cambridge's CHIA Lab as a research assistant</li>
-          <li className="update-log-entry">Septembert 2025: I am the Chair for the 2025 Deep Learning Indaba's Ideathon</li>
-          <li className="update-log-entry">August 2025: I attended the Deep Learning Indaba in Kigali</li>
-          <li className="update-log-entry">June 2025: Our paper, The World Wide Recipe received a Best Paper Honourable Mention at FAccT 2025!</li>
-          <li className="update-log-entry">September 2024 - February 2025: I worked at Google DeepMind as a Research Intern</li>
-          <li className="update-log-entry">September 2024: I am in Dakar, Senegal for the Deep Learning Indaba</li>
-          <li className="update-log-entry">May - August 2024: I worked at Microsoft Research as an Engineering Intern</li>
-          <li className="update-log-entry">April 2024: I was awarded $20,000 in OpenAI API credits to support our work on World Wide Dishes</li>
-          <li className="update-log-entry">January 2024: I am the Chair for the Deep Learning Indaba's Mentorship Programme </li>
-          <li className="update-log-entry">December 2023: I am in New Orleans, United States for NeurIPS</li>
-          <li className="update-log-entry">September 2023: I am in Accra, Ghana for the Deep Learning Indaba</li>
-          <li className="update-log-entry">May 2023: I am in Cape Town for the IBRO-Simons Computational Neuroscience Imbizo</li>
-          <li className="update-log-entry">January 2023: I am the Communications Chair for the Deep Learning Indaba</li>
-          <li className="update-log-entry">September 2022: I am in Tunis, Tunisia for the Deep Learning Indaba</li>
-          <li className="update-log-entry">October 2021: I started my DPhil at the University of Oxford with the Oxford Neural Interfacing Group</li>
-          <li className="update-log-entry">November 2021: We hosted our final episode of <a href="https://www.youtube.com/@nervonline1850" target="_blank" rel="noopener noreferrer">NERV</a></li>
+          {visibleNews.map((entry) => (
+            <li key={entry.id} className="update-log-entry">
+              {entry.content}
+            </li>
+          ))}
         </ul>
+        {newsEntries.length > 10 && (
+          <button
+            className="toggle-news-button"
+            aria-label={showAllNews ? "Collapse recent news list" : "Expand to see all recent news"}
+            onClick={() => setShowAllNews(!showAllNews)}
+          >
+            {showAllNews ? "Show less" : "See more"}
+          </button>
+        )}
       </section>
       <h1 id="publications">Projects & Publications</h1>
       <div className="Projects-container">

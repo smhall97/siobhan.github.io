@@ -184,6 +184,32 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2em;
 }
 
+.toggle-news-button {
+  background-color: var(--dusty-grape);
+  color: #ffffff;
+  border: 2px solid var(--dusty-grape);
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 16px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.toggle-news-button:hover,
+.toggle-news-button:focus {
+  background-color: var(--dark-amethyst);
+  border-color: var(--dark-amethyst);
+  box-shadow: 0 4px 8px rgba(35, 25, 66, 0.2);
+}
+
+.toggle-news-button:active {
+  transform: scale(0.98);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -195,11 +221,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .Projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 30px;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .ProjectCard {
@@ -335,6 +362,11 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 1.2rem;
   }
 
+  .toggle-news-button {
+    font-size: 15px;
+    padding: 0.65rem 1.25rem;
+  }
+
 }
 
 /* Additional responsiveness for very small devices */
@@ -383,13 +415,15 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--timeline-card-bg); /* Light background for the items */
   border: var(--card-border); /* Subtle border */
   border-radius: 8px; /* Soft rounded corners */
-  transition: background 0.2s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: background 0.2s ease-in-out, box-shadow 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
 
 
   .timeline-item:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     background: var(--timeline-card-bg-hover);
+    z-index: 10;
   }
 
 /* Width of the line */
