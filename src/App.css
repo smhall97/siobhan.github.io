@@ -540,20 +540,20 @@ h1, h2, h3, h4, h5, h6 {
   .nav-menu {
     position: fixed;
     top: 0;
-    right: -100%; /* Hidden off-screen initially */
+    left: -100%; /* Hidden off-screen initially */
     width: 250px;
     height: 100vh;
     background-color: var(--dark-amethyst);
     flex-direction: column;
     gap: 0;
     padding: 60px 0 0 0;
-    transition: right 0.3s ease-in-out;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease-in-out;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
   }
 
   /* When menu is open */
   .nav-menu.mobile-open {
-    right: 0;
+    left: 0;
   }
 
   .nav-menu a {
