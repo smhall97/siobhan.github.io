@@ -130,13 +130,14 @@ h1, h2, h3, h4, h5, h6 {
   border: var(--card-border);
   border-radius: 8px;
   overflow: hidden;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, z-index 0s;
 }
 
 .ProjectCard:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   background: var(--card-bg-hover);
+  z-index: 10;
 }
 
 .ProjectCard img {
@@ -151,13 +152,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ProjectCard h2 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin: 0.5em;
   padding: 0 15px;
+  line-height: 1.3;
 }
 
 .ProjectCard .Authors, .Venue {
   color:#908b8b;
+  font-size: 0.95em;
 }
 
 .ProjectContent .Venue {
@@ -166,9 +169,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .ProjectCard p {
   padding: 0 1em;
-  font-size: 0.85em;
+  font-size: 1em;
   text-align: left;
   padding: 0 15px;
+  line-height: 1.5;
 }
 
 .ProjectCard a {
@@ -179,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   transition: background-color 0.2s;
   align-self: center;
-  font-size: 0.9em;
+  font-size: 1em;
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 500;
