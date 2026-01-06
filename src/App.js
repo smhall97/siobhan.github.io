@@ -143,6 +143,7 @@ function App() {
         )}
       </section>
       <h1 id="publications">Publications</h1>
+      <h4>See my <a href="https://scholar.google.com/citations?user=A9c8wlwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> for a complete list of publications.</h4>
       <div className="Projects-container">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
