@@ -3,6 +3,7 @@
     "id": 1,
     "title": "DPhil Candidate",
     "company": "University of Oxford",
+    "company_link": "https://www.nds.ox.ac.uk/team/siobhan-hall",
     "location": "Oxford, United Kingdom",
     "duration": "October 2021 - Present",
     "description": "Thesis: Electrode Design for Localised Cortical Stimulation - A Computational Study"
