@@ -26,7 +26,7 @@ function App() {
         <>October - December 2025: I joined the University of Cambridge's CHIA Lab as a <a href="https://www.chia.cam.ac.uk/team/siobhan-hall" target="_blank" rel="noopener noreferrer">research assistant</a></>
       )
     },
-    { id: 3, content: "Septembert 2025: I am the Chair for the 2025 Deep Learning Indaba's Ideathon" },
+    { id: 3, content: "September 2025: I am the Chair for the 2025 Deep Learning Indaba's Ideathon" },
     { id: 4, content: "August 2025: I attended the Deep Learning Indaba in Kigali" },
     { id: 5, content: "June 2025: Our paper, The World Wide Recipe received a Best Paper Honourable Mention at FAccT 2025!" },
     { id: 6, content: "September 2024 - February 2025: I worked at Google DeepMind as a Research Intern" },
