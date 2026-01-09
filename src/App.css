@@ -750,4 +750,36 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--amethyst-smoke);
     box-shadow: 0 4px 8px rgba(184, 164, 219, 0.3);
   }
+
+  /* Project cards */
+  .ProjectCard {
+    background: var(--card-bg);
+    border: var(--card-border);
+  }
+
+  .ProjectCard:hover {
+    background: var(--card-bg-hover);
+  }
+
+  .ProjectCard img {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .ProjectCard .Authors,
+  .ProjectCard .Venue {
+    color: var(--secondary-text);
+  }
+
+  .ProjectCard a {
+    color: var(--link-color);
+  }
+
+  .ProjectCard a:hover,
+  .ProjectCard a:focus {
+    color: var(--link-hover);
+  }
+
+  .ProjectCard a:visited {
+    color: var(--link-color);
+  }
 }
