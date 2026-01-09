@@ -15,6 +15,9 @@
   --timeline-card-bg-hover: #9f86c08c;
   --card-border: 1px solid #be95c4;
   --header-bg: linear-gradient(-45deg, #e0b1cba5, #9f86c05a, #5e548e3a);
+
+  /* Declare support for both light and dark color schemes */
+  color-scheme: light dark;
 }
 
 body, html {
@@ -23,7 +26,8 @@ body, html {
   font-family: "Aptos Narrow", "PT Sans Narrow", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #231942;
+  color: var(--dark-amethyst);
+  background-color: #ffffff;
 }
 
 .App {
