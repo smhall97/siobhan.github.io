@@ -639,3 +639,37 @@ h1, h2, h3, h4, h5, h6 {
 .attribution a{
   color: #d4d3d3;
 }
+
+/* ========================================
+   DARK MODE SUPPORT
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Background and text colors */
+    --body-bg: #1a1625;
+    --body-text: #e8e6ef;
+    --heading-text: #f0edf7;
+
+    /* Adjusted purple palette for dark mode */
+    --dusty-grape: #8878b8;
+    --amethyst-smoke: #b8a4db;
+    --lilac: #d4c0e0;
+    --pink-orchid: #f0d5e5;
+
+    /* Component backgrounds - opaque gradients for dark mode */
+    --card-bg: linear-gradient(135deg, #2a2436, #3d2f52, #4a3a60);
+    --card-bg-hover: linear-gradient(135deg, #3d2f52, #4a3a60, #5e4d75);
+    --timeline-card-bg: #3d2f52;
+    --timeline-card-bg-hover: #4a3a60;
+    --card-border: 1px solid #5e4d75;
+    --header-bg: linear-gradient(-45deg, #3d2f52, #4a3a60, #2a2436);
+
+    /* Semantic colors for links and UI elements */
+    --link-color: #b8a4db;
+    --link-hover: #d4c0e0;
+    --border-color: #5e4d75;
+    --secondary-text: #b8b0c8;
+    --white-text: #f0edf7;
+  }
+}
