@@ -688,4 +688,66 @@ h1, h2, h3, h4, h5, h6 {
   .App {
     background-color: var(--body-bg);
   }
+
+  /* Links */
+  .App a {
+    color: var(--link-color);
+  }
+
+  .App a:hover,
+  .App a:focus {
+    color: var(--link-hover);
+  }
+
+  /* Header */
+  .App-header {
+    color: var(--body-text);
+  }
+
+  .App-header h2 {
+    color: var(--white-text);
+    background: var(--dark-amethyst);
+  }
+
+  .App-header a {
+    color: var(--link-color);
+  }
+
+  .App-header a:hover,
+  .App-header a:focus {
+    color: var(--link-hover);
+  }
+
+  /* Social links */
+  .social-links-row a {
+    color: var(--link-color);
+  }
+
+  .social-links-row a:hover,
+  .social-links-row a:focus {
+    color: var(--link-hover);
+  }
+
+  /* Update log section */
+  .update-log-section {
+    color: var(--body-text);
+  }
+
+  .update-log-entry::before {
+    color: var(--amethyst-smoke);
+  }
+
+  /* Toggle button */
+  .toggle-news-button {
+    background-color: var(--dusty-grape);
+    color: var(--white-text);
+    border: 2px solid var(--dusty-grape);
+  }
+
+  .toggle-news-button:hover,
+  .toggle-news-button:focus {
+    background-color: var(--amethyst-smoke);
+    border-color: var(--amethyst-smoke);
+    box-shadow: 0 4px 8px rgba(184, 164, 219, 0.3);
+  }
 }
