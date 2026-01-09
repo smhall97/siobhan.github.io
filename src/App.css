@@ -35,7 +35,7 @@ body, html {
   align-items: center;
   justify-content: center;
   justify-items: center;
-  background-image: url('/images/website_bg_blue.png');
+  background-image: url('./images/website_bg_blue.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -693,7 +693,7 @@ h1, h2, h3, h4, h5, h6 {
   /* App component */
   .App {
     background-color: var(--body-bg);
-    background-image: url('/images/website_bg_blk.png');
+    background-image: url('./images/website_bg_blk.png');
   }
 
   /* Links */
