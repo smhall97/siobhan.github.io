@@ -15,6 +15,9 @@
   --timeline-card-bg-hover: #9f86c08c;
   --card-border: 1px solid #be95c4;
   --header-bg: linear-gradient(-45deg, #e0b1cba5, #9f86c05a, #5e548e3a);
+
+  /* Declare support for both light and dark color schemes */
+  color-scheme: light dark;
 }
 
 body, html {
@@ -23,7 +26,8 @@ body, html {
   font-family: "Aptos Narrow", "PT Sans Narrow", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #231942;
+  color: var(--dark-amethyst);
+  background-color: #ffffff;
 }
 
 .App {
@@ -634,4 +638,227 @@ h1, h2, h3, h4, h5, h6 {
 }
 .attribution a{
   color: #d4d3d3;
+}
+
+/* ========================================
+   DARK MODE SUPPORT
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Background and text colors */
+    --body-bg: #1a1625;
+    --body-text: #e8e6ef;
+    --heading-text: #f0edf7;
+
+    /* Adjusted purple palette for dark mode */
+    --dusty-grape: #8878b8;
+    --amethyst-smoke: #b8a4db;
+    --lilac: #d4c0e0;
+    --pink-orchid: #f0d5e5;
+
+    /* Component backgrounds - opaque gradients for dark mode */
+    --card-bg: linear-gradient(135deg, #2a2436, #3d2f52, #4a3a60);
+    --card-bg-hover: linear-gradient(135deg, #3d2f52, #4a3a60, #5e4d75);
+    --timeline-card-bg: #3d2f52;
+    --timeline-card-bg-hover: #4a3a60;
+    --card-border: 1px solid #5e4d75;
+    --header-bg: linear-gradient(-45deg, #3d2f52, #4a3a60, #2a2436);
+
+    /* Semantic colors for links and UI elements */
+    --link-color: #b8a4db;
+    --link-hover: #d4c0e0;
+    --border-color: #5e4d75;
+    --secondary-text: #b8b0c8;
+    --white-text: #f0edf7;
+  }
+
+  /* Body and HTML base styles */
+  body, html {
+    background-color: var(--body-bg);
+    color: var(--body-text);
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-text);
+  }
+
+  /* App component */
+  .App {
+    background-color: var(--body-bg);
+  }
+
+  /* Links */
+  .App a {
+    color: var(--link-color);
+  }
+
+  .App a:hover,
+  .App a:focus {
+    color: var(--link-hover);
+  }
+
+  /* Header */
+  .App-header {
+    color: var(--body-text);
+  }
+
+  .App-header h2 {
+    color: var(--white-text);
+    background: var(--dark-amethyst);
+  }
+
+  .App-header a {
+    color: var(--link-color);
+  }
+
+  .App-header a:hover,
+  .App-header a:focus {
+    color: var(--link-hover);
+  }
+
+  /* Social links */
+  .social-links-row a {
+    color: var(--link-color);
+  }
+
+  .social-links-row a:hover,
+  .social-links-row a:focus {
+    color: var(--link-hover);
+  }
+
+  /* Update log section */
+  .update-log-section {
+    color: var(--body-text);
+  }
+
+  .update-log-entry::before {
+    color: var(--amethyst-smoke);
+  }
+
+  /* Toggle button */
+  .toggle-news-button {
+    background-color: var(--dusty-grape);
+    color: var(--white-text);
+    border: 2px solid var(--dusty-grape);
+  }
+
+  .toggle-news-button:hover,
+  .toggle-news-button:focus {
+    background-color: var(--amethyst-smoke);
+    border-color: var(--amethyst-smoke);
+    box-shadow: 0 4px 8px rgba(184, 164, 219, 0.3);
+  }
+
+  /* Project cards */
+  .ProjectCard {
+    background: var(--card-bg);
+    border: var(--card-border);
+  }
+
+  .ProjectCard:hover {
+    background: var(--card-bg-hover);
+  }
+
+  .ProjectCard img {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .ProjectCard .Authors,
+  .ProjectCard .Venue {
+    color: var(--secondary-text);
+  }
+
+  .ProjectCard a {
+    color: var(--link-color);
+  }
+
+  .ProjectCard a:hover,
+  .ProjectCard a:focus {
+    color: var(--link-hover);
+  }
+
+  .ProjectCard a:visited {
+    color: var(--link-color);
+  }
+
+  /* Timeline */
+  .timeline-container::before {
+    background-color: var(--lilac);
+  }
+
+  .timeline-item {
+    background: var(--timeline-card-bg);
+    border: var(--card-border);
+  }
+
+  .timeline-item:hover {
+    background: var(--timeline-card-bg-hover);
+  }
+
+  .timeline-item::before {
+    background-color: var(--amethyst-smoke);
+  }
+
+  /* Fixed navigation header */
+  .fixed-name {
+    background-color: var(--dark-amethyst);
+  }
+
+  .fixed-name a {
+    color: var(--white-text);
+  }
+
+  .fixed-name a:hover,
+  .fixed-name a:focus {
+    color: var(--pink-orchid);
+  }
+
+  /* Navigation menu */
+  .nav-menu a {
+    color: var(--white-text);
+  }
+
+  .nav-menu a:hover,
+  .nav-menu a:focus {
+    color: var(--pink-orchid);
+    border-bottom: 2px solid var(--pink-orchid);
+  }
+
+  /* Hamburger menu */
+  .hamburger-icon {
+    background-color: var(--white-text);
+  }
+
+  /* Menu overlay */
+  .menu-overlay {
+    background-color: rgba(26, 22, 37, 0.85);
+  }
+
+  /* Mobile navigation */
+  @media (max-width: 768px) {
+    .nav-menu {
+      background-color: var(--dark-amethyst);
+    }
+
+    .nav-menu a {
+      border-bottom: 1px solid var(--dusty-grape);
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a:focus {
+      background-color: var(--dusty-grape);
+      color: var(--white-text);
+    }
+  }
+
+  /* Attribution */
+  .attribution {
+    color: #8b8a8a;
+  }
+
+  .attribution a {
+    color: #8b8a8a;
+  }
 }
