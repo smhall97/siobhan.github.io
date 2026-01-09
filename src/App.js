@@ -62,16 +62,7 @@ function App() {
   const visibleNews = showAllNews ? newsEntries : newsEntries.slice(0, 10);
 
   return (
-    <div className="App"
-      style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/images/website_bg_blue.png)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed', // Keeps the image fixed during scrolling
-        minHeight: '100vh',
-      }}
-    >
+    <div className="App">
       <header className="App-header">
         <h2 className="fixed-name"><a href="#about">Siobhan Mackenzie Hall</a></h2>
 
