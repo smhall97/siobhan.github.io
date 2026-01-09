@@ -693,6 +693,7 @@ h1, h2, h3, h4, h5, h6 {
   /* App component */
   .App {
     background-color: var(--body-bg);
+    background-image: url('/images/website_bg_blk.png');
   }
 
   /* Links */
