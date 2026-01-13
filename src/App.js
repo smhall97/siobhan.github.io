@@ -26,27 +26,33 @@ function App() {
         <>October - December 2025: I joined the University of Cambridge's CHIA Lab as a <a href="https://www.chia.cam.ac.uk/team/siobhan-hall" target="_blank" rel="noopener noreferrer">research assistant</a></>
       )
     },
-    { id: 3, content: "Septembert 2025: I am the Chair for the 2025 Deep Learning Indaba's Ideathon" },
+    { id: 3, content: "September 2025: I am the Chair for the 2025 Deep Learning Indaba's Ideathon" },
     { id: 4, content: "August 2025: I attended the Deep Learning Indaba in Kigali" },
     { id: 5, content: "June 2025: Our paper, The World Wide Recipe received a Best Paper Honourable Mention at FAccT 2025!" },
     { id: 6, content: "September 2024 - February 2025: I worked at Google DeepMind as a Research Intern" },
     { id: 7, content: "September 2024: I am in Dakar, Senegal for the Deep Learning Indaba" },
     { id: 8, content: "May - August 2024: I worked at Microsoft Research as an Engineering Intern" },
-    { id: 9, content: "April 2024: I was awarded $20,000 in OpenAI API credits to support our work on World Wide Dishes" },
+    { id: 9, content: "March 2024: I was awarded $20,000 in OpenAI API credits to support our work on World Wide Dishes" },
     { id: 10, content: "January 2024: I am the Chair for the Deep Learning Indaba's Mentorship Programme " },
     { id: 11, content: "December 2023: I am in New Orleans, United States for NeurIPS" },
     { id: 12, content: "September 2023: I am in Accra, Ghana for the Deep Learning Indaba" },
-    { id: 13, content: "May 2023: I am in Cape Town, South Africa for the IBRO-Simons Computational Neuroscience Imbizo" },
-    { id: 14, content: "January 2023: I am the Communications Chair for the Deep Learning Indaba" },
-    { id: 15, content: "September 2022: I am in Tunis, Tunisia for the Deep Learning Indaba" },
     {
-      id: 16,
+      id: 13,
+      content: (
+        <>July 2023: I recorded an <a href="https://open.spotify.com/episode/5UDbXvW9ySqkMEr4dNVXNC?si=CkceyMmJSvi71lT6Mfhigg&nd=1&dlsi=314f2063ed824e05" target="_blank" rel="noopener noreferrer">episode</a> with The Science in Real Life Podcast where I share my journey from physiotherapy to working in responsible AI</>
+      )
+    },
+    { id: 14, content: "May 2023: I am in Cape Town, South Africa for the IBRO-Simons Computational Neuroscience Imbizo" },
+    { id: 15, content: "January 2023: I am the Communications Chair for the Deep Learning Indaba" },
+    { id: 16, content: "September 2022: I am in Tunis, Tunisia for the Deep Learning Indaba" },
+    {
+      id: 17,
       content: (
         <>October 2021: I started my DPhil at the University of Oxford with the <a href="https://www.nds.ox.ac.uk/team/siobhan-hall" target="_blank" rel="noopener noreferrer">Oxford Neural Interfacing Group</a></>
       )
     },
     {
-      id: 17,
+      id: 18,
       content: (
         <>November 2021: We hosted our final episode of <a href="https://www.youtube.com/@nervonline1850" target="_blank" rel="noopener noreferrer">NERV</a></>
       )
@@ -56,16 +62,7 @@ function App() {
   const visibleNews = showAllNews ? newsEntries : newsEntries.slice(0, 10);
 
   return (
-    <div className="App"
-      style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/images/website_bg_blue.png)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed', // Keeps the image fixed during scrolling
-        minHeight: '100vh',
-      }}
-    >
+    <div className="App">
       <header className="App-header">
         <h2 className="fixed-name"><a href="#about">Siobhan Mackenzie Hall</a></h2>
 
