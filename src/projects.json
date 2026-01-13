@@ -2,7 +2,7 @@
   {
     "id": "project1",
     "title": "The World Wide Recipe: A Community-Centred Framework for Fine-Grained Data Collection and Regional Bias Operationalisation",
-    "description": "Addressing the 'Western gaze' in AI training data by building a dataset from the ground up using community networks in Africa and beyond. Collected 765 unique dishes across 106 countries, with names in 131 local languages. Over 50% of community-sourced dishes did not exist in comparable web-scraped datasets, proving the limits of automated scraping.",
+    "description": "The *World Wide Recipe* Addressing the 'Western gaze' in AI training data by building a dataset from the ground up using community networks in Africa and beyond. Collected 765 unique dishes across 106 countries, with names in 131 local languages. Over 50% of community-sourced dishes did not exist in comparable web-scraped datasets, proving the limits of automated scraping.",
     "authors": ["Jabez Magomere", "Shu Ishida", "Tejumade Afonja", "Aya Salama", "Daniel Kochin", "Foutse Yuehgoh", "Imane Hamzaoui", "Raesetje Sefala", "Aisha Alaagib", "Samantha Dalal", "Beatrice Marchegiani", "Elizaveta Semenova", "Lauren Crais", "Siobhan Mackenzie Hall"],
     "venue": "ACM FAccT 2025 (Best Paper Honourable Mention)",
     "paperURL": "https://dl.acm.org/doi/10.1145/3715275.3732019"
@@ -26,7 +26,7 @@
   {
     "id": "project4",
     "title": "SMRS: Advocating a Unified Reporting Standard for Surrogate Models",
-    "description": "Position paper advocating for standardised reporting practices in surrogate modelling to ensure reproducibility and transparency. Addresses the challenge of using artificial neural networks as surrogates for computationally expensive physics simulations, particularly in the context of computational neuroscience and electrode design.",
+    "description": "Scientific and engineering problems, from climate prediction to drug discovery, often depend on surrogate models: simplified, data-driven models that approximate expensive simulations or experiments. These surrogates save enormous amounts of time and computation but are developed in very different ways across disciplines. As a result, it is often impossible to reproduce, compare, or reuse them, even when code and data are available. This paper argues that the field needs a shared way to report how surrogate models are built, trained, and tested. We introduce the Surrogate Model Reporting Specification (SMRS), a lightweight checklist that captures key design choices, such as how data were collected, what type of model was used, how uncertainty was handled, and how performance was evaluated. SMRS is not a new algorithm; it is a structured way to describe existing ones so that other researchers can understand and replicate them. By introducing a consistent reporting standard, we aim to make surrogate modelling more transparent, comparable, and trustworthy, ultimately accelerating progress across many scientific fields in the age of artificial intelligence.",
     "authors": ["Elizaveta Semenova", "Alisa Sheinkman", "Timothy James Hitge", "Siobhan Mackenzie Hall", "Jon Cockayne"],
     "venue": "NeurIPS 2025 Position Paper",
     "paperURL": "https://arxiv.org/abs/2502.06753"
