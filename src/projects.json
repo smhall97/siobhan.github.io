@@ -42,7 +42,7 @@
   {
     "id": "project6",
     "title": "The Human Labour of Data Work: Understanding the Challenges of Data Collection in the Global South",
-    "description": "Investigates the human labour involved in data collection processes, particularly focusing on challenges faced by communities in the Global South. Examines the intersection of responsible AI, data diversity, and the often-invisible work of data contributors. Highlights the need for ethical data collection practices that centre community voices and ensure fair compensation for data labour.",
+    "description": "This paper provides guidance for building and maintaining infrastructure for participatory AI efforts by sharing reflections on building World Wide Dishes (WWD), a bottom-up, community-led image and text dataset of culinary dishes and associated cultural customs. We present WWD as an example of participatory dataset creation, where community members both guide the design of the research process and contribute to the crowdsourced dataset. This approach incorporates localised expertise and knowledge to address the limitations of web-scraped Internet datasets acknowledged in the Participatory AI discourse.",
     "authors": ["Siobhan Mackenzie Hall", "Samantha Dalal", "Raesetje Sefala", "Foutse Yuehgoh", "Aisha Alaagib", "Imane Hamzaoui", "Shu Ishida", "Jabez Magomere", "Lauren Crais", "Aya Salama", "Tejumade Afonja"],
     "venue": "CSCW 2025",
     "paperURL": "https://dl.acm.org/doi/10.1145/3757673"
