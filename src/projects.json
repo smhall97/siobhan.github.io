@@ -2,7 +2,7 @@
   {
     "id": "project1",
     "title": "The World Wide Recipe: A Community-Centred Framework for Fine-Grained Data Collection and Regional Bias Operationalisation",
-    "description": "A framework for culturally aware, community-centred data collection and the World Wide Dishes evaluation dataset comprising 765 unique dishes across 106 countries in 131 local languages. We analyze how T2I models underperform across accuracy, representation, and cultural sensitivity dimensions. Models produce inaccurate and culturally misrepresentative outputs even for well-resourced regions like the US, with worse performance for African countries. Over 50% of community-sourced dishes didn't exist in web-scraped datasets, proving the limits of automated scraping.",
+    "description": "A framework for culturally aware, community-centred data collection and the World Wide Dishes evaluation dataset comprising 765 unique dishes across 106 countries in 131 local languages. We analyse how T2I models underperform across accuracy, representation, and cultural sensitivity dimensions. Models produce inaccurate and culturally misrepresentative outputs even for well-resourced regions such as the US, with worse performance for African countries. Over 50% of community-sourced dishes didn't exist in web-scraped datasets, proving the limits of automated scraping.",
     "authors": ["Jabez Magomere", "Shu Ishida", "Tejumade Afonja", "Aya Salama", "Daniel Kochin", "Foutse Yuehgoh", "Imane Hamzaoui", "Raesetje Sefala", "Aisha Alaagib", "Samantha Dalal", "Beatrice Marchegiani", "Elizaveta Semenova", "Lauren Crais", "Siobhan Mackenzie Hall"],
     "venue": "ACM FAccT 2025 (Best Paper Honourable Mention)",
     "paperURL": "https://dl.acm.org/doi/10.1145/3715275.3732019"
@@ -34,7 +34,7 @@
   {
     "id": "project5",
     "title": "Finite Element Modelling for Biophysical Models of Cortical Stimulation: A Computational Framework",
-    "description": "Methods for FEM modeling of peripheral and central nervous systems for testing cortical stimulation hypotheses and electrode designs before in vitro/in vivo experiments. We evaluate the impact of differentiation errors on calculating the Activating Function and predicting action potentials in Hodgkin-Huxley axon models. Poor spatial discretization generates double-derivative noise, with coarser meshes requiring higher activation thresholds (57.5 mA vs 55 mA). Our findings support using the finest spatial discretizations possible within computational constraints and coupling extracellular fields to H-H-based axons.",
+    "description": "Methods for FEM modeling of peripheral and central nervous systems for testing cortical stimulation hypotheses and electrode designs before in vitro/in vivo experiments. We evaluate the impact of differentiation errors on calculating the Activating Function and predicting action potentials in Hodgkin-Huxley axon models. Poor spatial discretisation generates double-derivative noise, with coarser meshes requiring higher activation thresholds (57.5 mA vs 55 mA). Our findings support using the finest spatial discretizations possible within computational constraints and coupling extracellular fields to H-H-based axons.",
     "authors": ["Rodrigo Osorio L.", "Siobhan Mackenzie Hall", "Francisco Saavedra R.", "Pablo Aqueveque N.", "James J. FitzGerald", "Brian Andrews"],
     "venue": "IEEE TNSRE 2025",
     "paperURL": "https://ieeexplore.ieee.org/document/10820855"
