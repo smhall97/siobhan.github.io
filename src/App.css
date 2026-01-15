@@ -877,6 +877,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Increase h1 contrast on mobile devices in dark mode */
 @media (max-width: 768px) and (prefers-color-scheme: dark) {
   h1 {
-    color: #ffffff;  /* Pure white for maximum contrast on mobile */
+    color: var(--dark-amethyst);  /* Dark colour for contrast against light background */
   }
 }
