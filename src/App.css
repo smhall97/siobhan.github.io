@@ -874,9 +874,13 @@ h1, h2, h3, h4, h5, h6 {
    MOBILE DARK MODE ADJUSTMENTS
    ======================================== */
 
-/* Increase h1 contrast on mobile devices in dark mode */
+/* Increase heading contrast on mobile devices in dark mode */
 @media (max-width: 768px) and (prefers-color-scheme: dark) {
-  h1 {
+  h1, h4 {
     color: var(--dark-amethyst);  /* Dark colour for contrast against light background */
+  }
+
+  .App-header h2 {
+    color: #ffffff;  /* White text for contrast against dark purple background */
   }
 }
