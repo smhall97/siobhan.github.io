@@ -865,11 +865,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .App-header h2 {
-      color: #e0b1cb;
+      color: #ffffff !important;
     }
 
     .timeline-item a {
-      color: #e0b1cb;
+      color: #ffffff !important;
     }
   }
 
