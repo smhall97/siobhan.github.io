@@ -858,6 +858,19 @@ h1, h2, h3, h4, h5, h6 {
       background-color: var(--dusty-grape);
       color: var(--white-text);
     }
+
+    /* Mobile dark mode contrast fixes */
+    h1, h4 {
+      color: var(--dark-amethyst);
+    }
+
+    .App-header h2 {
+      color: #e0b1cb;
+    }
+
+    .timeline-item a {
+      color: #e0b1cb;
+    }
   }
 
   /* Attribution */
@@ -870,21 +883,3 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* ========================================
-   MOBILE DARK MODE ADJUSTMENTS
-   ======================================== */
-
-/* Increase heading contrast on mobile devices in dark mode */
-@media (max-width: 768px) and (prefers-color-scheme: dark) {
-  h1, h4 {
-    color: var(--dark-amethyst);  /* Dark colour for contrast against light background */
-  }
-
-  .App-header h2 {
-    color: #e0b1cb;  /* Pink orchid for contrast against dark purple background */
-  }
-
-  .timeline-item a {
-    color: #e0b1cb;  /* Pink orchid for contrast against dark card background */
-  }
-}
