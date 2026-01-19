@@ -858,6 +858,19 @@ h1, h2, h3, h4, h5, h6 {
       background-color: var(--dusty-grape);
       color: var(--white-text);
     }
+
+    /* Mobile dark mode contrast fixes */
+    h1, h4 {
+      color: var(--dark-amethyst);
+    }
+
+    .App-header h2 {
+      color: #ffffff !important;
+    }
+
+    .timeline-item a {
+      color: #ffffff !important;
+    }
   }
 
   /* Attribution */
@@ -869,3 +882,4 @@ h1, h2, h3, h4, h5, h6 {
     color: #8b8a8a;
   }
 }
+
