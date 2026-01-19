@@ -342,6 +342,35 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.9;
 }
 
+/* Collapsible description */
+.description-container {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.description-container.collapsed {
+  max-height: 0;
+}
+
+.description-container.expanded {
+  max-height: 500px;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: var(--dusty-grape);
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0.5em;
+  transition: color 0.2s;
+}
+
+.read-more-btn:hover {
+  color: var(--dark-amethyst);
+  text-decoration: underline;
+}
 
 /* Responsive Typography */
 @media (max-width: 768px) {
@@ -788,6 +817,14 @@ h1, h2, h3, h4, h5, h6 {
 
   .ProjectCard a:visited {
     color: var(--link-color);
+  }
+
+  .read-more-btn {
+    color: var(--link-color);
+  }
+
+  .read-more-btn:hover {
+    color: var(--link-hover);
   }
 
   /* Timeline */

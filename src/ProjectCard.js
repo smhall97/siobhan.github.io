@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 function ProjectCard({ project }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div
       className="ProjectCard"
@@ -33,7 +34,15 @@ function ProjectCard({ project }) {
             ))}
           </p>
         )}
-        <p>{project.description}</p>
+        <div className={`description-container ${isExpanded ? 'expanded' : 'collapsed'}`}>
+          <p>{project.description}</p>
+        </div>
+        <button
+          className="read-more-btn"
+          onClick={(e) => { e.stopPropagation(); setIsExpanded(!isExpanded); }}
+        >
+          {isExpanded ? 'Read less' : 'Read more'}
+        </button>
       </div>
       <div className="links-row">
       {project.projectURL && <a href={project.projectURL} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>Project</a>}
